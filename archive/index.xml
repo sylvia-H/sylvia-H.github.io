@@ -6,16 +6,17 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Categories on Sylvia&#39;s Babel</title>
-    <link>https://sylvia-H.github.io/en/categories/</link>
-    <description>Recent content in Categories on Sylvia&#39;s Babel</description>
+    <title>Archive on Sylvia&#39;s Babel</title>
+    <link>https://sylvia-H.github.io/archive/</link>
+    <description>Recent content in Archive on Sylvia&#39;s Babel</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>zh</language>
     <managingEditor>sylvie11gaia@gmail.com (Sylvia-H)</managingEditor>
     <webMaster>sylvie11gaia@gmail.com (Sylvia-H)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 09 Oct 2021 21:57:46 +0800</lastBuildDate>
     
-        <atom:link href="https://sylvia-H.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://sylvia-H.github.io/archive/index.xml" rel="self" type="application/rss+xml" />
     
 
       
