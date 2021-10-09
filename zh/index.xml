@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Sylvia&#39;s Babel</title>
+    <link>https://sylvia-H.github.io/zh/</link>
+    <description>Recent content on Sylvia&#39;s Babel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>sylvie11gaia@gmail.com (Sylvia Hu)</managingEditor>
+    <webMaster>sylvie11gaia@gmail.com (Sylvia Hu)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 19 Sep 2021 20:13:11 +0800</lastBuildDate>
+    
+        <atom:link href="https://sylvia-H.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      <item>
+        <title>型別大亂鬥：靜態型別/動態型別/隱性型別/強型別/弱型別</title>
+        <link>https://sylvia-H.github.io/zh/posts/20210919_language-type/</link>
+        <pubDate>Sun, 19 Sep 2021 20:13:11 +0800</pubDate>
+        <author>sylvie11gaia@gmail.com (Sylvia Hu)</author>
+        <atom:modified>Sun, 19 Sep 2021 20:13:11 +0800</atom:modified>
+        <guid>https://sylvia-H.github.io/zh/posts/20210919_language-type/</guid>
+        <description>在釐清 Javascript 的資料型別的過程中，一不小心踏入了這個名詞坑。 一開始只是想釐清 Javascript 的資料型別，讀到 MDN 一篇關於 JavaScript 的資料型別與資料結構的文章，文中出現「動態型別」一詞來說明 Javascript 的特性，為了弄清楚該詞的意思，結果一腳踏</description>
+        
+        <dc:creator>Sylvia Hu</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
