@@ -21,13 +21,16 @@
 
       
       <item>
-        <title>型別大亂鬥：靜態型別/動態型別/隱性型別/強型別/弱型別</title>
+        <title>型別名詞釋義：靜態型別/動態型別/隱性型別/強型別/弱型別</title>
         <link>https://sylvia-H.github.io/posts/20210919_language-type/</link>
         <pubDate>Sun, 19 Sep 2021 20:13:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
         <atom:modified>Sun, 19 Sep 2021 20:13:11 +0800</atom:modified>
         <guid>https://sylvia-H.github.io/posts/20210919_language-type/</guid>
-        <description>在釐清 Javascript 的資料型別的過程中，一不小心踏入了這個名詞坑。
+        <description>型別名詞釋義:
+靜態型別 動態型別 隱性型別 強型別 弱型別
+
+ 在釐清 Javascript 的資料型別的過程中，一不小心踏入了這個名詞坑。
 一開始只是想釐清 Javascript 的資料型別，讀到 MDN 一篇關於 JavaScript 的資料型別與資料結構的文章，文中出現「動態型別」一詞來說明 Javascript 的特性，為了弄清楚該詞的意思，結果一腳踏入無底坑洞&amp;hellip;
 既然時間都花下去了，就來整理一下筆記吧。
 靜態型別、編譯式語言 靜態型別的語言(statically typed language)在型別的管理上十分嚴謹，在語法撰寫時就會要求對變數型別有明確定義。
@@ -44,10 +47,10 @@ C、C++、Rust、Go、Visual Basic、Swift、Obj-C、Java 和 C# 就是屬於編
 不同於隱性型別是透過編譯過程的推導而得知型別，顯性型別(explicitly typed)則是將型別作為語法宣告的一部份。
 動態型別、直譯式語言 動態型別的語言(dynamically typed language)相較於靜態型別的語言，在型別的處理上較鬆散靈活。
 以 Javascript 為例：
-1 2 3 4 5 6 7  let x; x=&amp;#34;Hello&amp;#34;; console.log(x); x=12; console.log(x);   宣告變數 x 時，沒有明確指定 x 的型別，代表能放入任意類型的資料；在賦值為 &amp;quot;Hello&amp;quot; 字串後，又改變賦值的資料型態放入整數 12，即便這樣改換資料型別，但程式依然可以成功運作。</description>
+1 2 3 4 5 6 7  let x; x=&amp;#34;Hello&amp;#34;; console.</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        
+        <media:content url="https://sylvia-H.github.ioimages/posts/js/type_paraphrase.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
