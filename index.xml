@@ -14,7 +14,7 @@
     <managingEditor>sylvie11gaia@gmail.com (Sylvia-H)</managingEditor>
     <webMaster>sylvie11gaia@gmail.com (Sylvia-H)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 09 Oct 2021 21:57:46 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 Oct 2021 15:49:11 +0800</lastBuildDate>
     
         <atom:link href="https://sylvia-H.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,48 @@
         
       
 
+      
+      <item>
+        <title>Javascript 的參數傳遞：by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享）</title>
+        <link>https://sylvia-H.github.io/posts/20211013_byvaluereferencesharing/</link>
+        <pubDate>Wed, 13 Oct 2021 15:49:11 +0800</pubDate>
+        <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
+        <atom:modified>Wed, 13 Oct 2021 15:49:11 +0800</atom:modified>
+        <guid>https://sylvia-H.github.io/posts/20211013_byvaluereferencesharing/</guid>
+        <description>Javascript 的參數傳遞:
+by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享）
+
+ 從比較運算子來釐清基本觀念 在正式進入這個主題之前，我們先來複習一下 JavaScript 的基本觀念。首先是「比較運算子」：
+1 2 3  let a = 3; let b = 3; console.log(a === b);   上面這題印出的答案是甚麼呢？沒錯，是 true。
+看到這邊，你可能會想翻桌，這麼簡單的問題還要問嗎？值與型別都相同，用嚴格相等比較運算子（===），結果當然是 true 啊。
+先壓壓怒氣，再來看看下面這題：
+1 2 3  let c = [&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;]; let d = [&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;]; console.log(c === d);   「廢話，當然也是 true 啊！」
+你確定嗎？
+那麼下面這幾題呢？
+1 2 3 4  console.log( [] === [] ); console.log( [1] === [1] ); console.log( {} === {} ); console.log( {a:1} === {a:1} );   執行以上五個判斷式的結果是什麼呢？
+結果竟然全部是 false ！
+原因就在於 Javascript 中不同型別的變數會有不同的儲存和傳遞資料的方式，大致上可以分為 「傳值」(call/pass by value) 和 「傳址（也有譯為「傳參考」）」(call/pass by reference) 兩種。</description>
+        
+        <dc:creator>Sylvia-H</dc:creator>
+        <media:content url="https://sylvia-H.github.ioimages/posts/js/passByValue_byReference_bySharing.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>型別名詞釋義：靜態型別/動態型別/隱性型別/強型別/弱型別</title>
