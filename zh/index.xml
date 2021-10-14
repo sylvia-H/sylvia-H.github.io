@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Sylvia&#39;s Babel</title>
+    <link>https://sylvia-H.github.io/zh/</link>
+    <description>Recent content on Sylvia&#39;s Babel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>sylvie11gaia@gmail.com (Sylvia-H)</managingEditor>
+    <webMaster>sylvie11gaia@gmail.com (Sylvia-H)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 14 Oct 2021 15:25:46 +0800</lastBuildDate>
+    
+        <atom:link href="https://sylvia-H.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+
+      
+      <item>
+        <title>Javascript 的參數傳遞：by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享）</title>
+        <link>https://sylvia-H.github.io/zh/posts/2021/1013_byvaluereferencesharing/</link>
+        <pubDate>Wed, 13 Oct 2021 15:49:11 +0800</pubDate>
+        <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
+        <atom:modified>Wed, 13 Oct 2021 15:49:11 +0800</atom:modified>
+        <guid>https://sylvia-H.github.io/zh/posts/2021/1013_byvaluereferencesharing/</guid>
+        <description>Javascript 的參數傳遞: by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享） 從比較運算子來釐清基本觀念 在正式進入這個主題之前，我們先來複習一下 JavaScript 的基本觀念。首先是「比較運算子」： 1 2 3 let a =</description>
+        
+        <dc:creator>Sylvia-H</dc:creator>
+        <media:content url="https://sylvia-H.github.ioimages/posts/js/passByValue_byReference_bySharing.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>型別名詞釋義：靜態型別/動態型別/隱性型別/強型別/弱型別</title>
+        <link>https://sylvia-H.github.io/zh/posts/2021/0919_language-type/</link>
+        <pubDate>Sun, 19 Sep 2021 20:13:11 +0800</pubDate>
+        <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
+        <atom:modified>Sun, 19 Sep 2021 20:13:11 +0800</atom:modified>
+        <guid>https://sylvia-H.github.io/zh/posts/2021/0919_language-type/</guid>
+        <description>型別名詞釋義: 靜態型別 動態型別 隱性型別 強型別 弱型別 在釐清 Javascript 的資料型別的過程中，一不小心踏入了這個名詞坑。 一開始只是想釐清 Javascript 的資料型別，讀到 MDN 一篇關於 JavaScript 的資料型別與資料結構的文章，文中出現「動態型別」一</description>
+        
+        <dc:creator>Sylvia-H</dc:creator>
+        <media:content url="https://sylvia-H.github.ioimages/posts/js/type_paraphrase.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
