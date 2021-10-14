@@ -46,7 +46,7 @@
         <link>https://sylvia-H.github.io/posts/2021/1013_byvaluereferencesharing/</link>
         <pubDate>Wed, 13 Oct 2021 15:49:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
-        <atom:modified>Wed, 13 Oct 2021 15:49:11 +0800</atom:modified>
+        <atom:modified>Thu, 14 Oct 2021 17:07:11 +0800</atom:modified>
         <guid>https://sylvia-H.github.io/posts/2021/1013_byvaluereferencesharing/</guid>
         <description>Javascript 的參數傳遞: by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享） 從比較運算子來釐清基本觀念 在正式進入這個主題之前，我們先來複習一下 JavaScript 的基本觀念。首先是「比較運算子」： 1 2 3 let a =</description>
         

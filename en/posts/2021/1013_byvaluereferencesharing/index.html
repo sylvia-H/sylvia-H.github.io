@@ -1331,15 +1331,15 @@
 
 
     
-<meta name="description" content="Javascript 是「傳值」(call/pass by value)還是「傳址（也有譯為「傳參考」）」(call/pass by reference)？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing 又是甚麼呢？" />
+<meta name="description" content="Javascript 是「傳值」(call/pass by value)還是「傳址（也有譯為「傳參考」）」(call/pass by reference)？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing（傳共享）又是甚麼呢？" />
 
-<meta name="keywords" content="Javascript,by value,by reference,by sharing">
+<meta name="keywords" content="Javascript,by value,by reference,by sharing,傳值,傳址,傳參考">
 
 
 <meta name="keywords" content="Javascript">
 
 <meta name="created" content="2021-10-13T15:49:11&#43;0800">
-<meta name="modified" content="2021-10-13T15:49:11&#43;0800">
+<meta name="modified" content="2021-10-14T17:07:11&#43;0800">
 <meta property="article:published_time" content="2021-10-13T15:49:11&#43;0800">
 
 <meta name="author" content="Sylvia-H">
@@ -1349,7 +1349,7 @@
 <meta property="og:title" content="Javascript 的參數傳遞：by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享）">
 <meta property="og:url" content="https://sylvia-H.github.io/en/posts/2021/1013_byvaluereferencesharing/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="Javascript 是「傳值」(call/pass by value)還是「傳址（也有譯為「傳參考」）」(call/pass by reference)？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing 又是甚麼呢？">
+<meta property="og:description" content="Javascript 是「傳值」(call/pass by value)還是「傳址（也有譯為「傳參考」）」(call/pass by reference)？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing（傳共享）又是甚麼呢？">
 
   
     <meta property="og:image" content="https://sylvia-H.github.io/images/posts/js/passByValue_byReference_bySharing.png">
@@ -1357,7 +1357,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="Sylvia&#39;s Babel">
     <meta property="twitter:title" content="Javascript 的參數傳遞：by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享）">
-    <meta property="twitter:description" content="Javascript 是「傳值」(call/pass by value)還是「傳址（也有譯為「傳參考」）」(call/pass by reference)？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing 又是甚麼呢？">
+    <meta property="twitter:description" content="Javascript 是「傳值」(call/pass by value)還是「傳址（也有譯為「傳參考」）」(call/pass by reference)？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing（傳共享）又是甚麼呢？">
   
 
 <meta name="generator" content="Hugo 0.86.0" />
@@ -1385,9 +1385,9 @@
     "@type": "WebPage",
     "headline": "Javascript 的參數傳遞：by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享）",
     "datePublished": "2021-10-13T15:49:11+08:00",
-    "dateModified": "2021-10-13T15:49:11+08:00",
+    "dateModified": "2021-10-14T17:07:11+08:00",
     "url" : "https://sylvia-H.github.io/en/posts/2021/1013_byvaluereferencesharing/",
-    "description": "Javascript 是「傳值」(call/pass by value)還是「傳址（也有譯為「傳參考」）」(call/pass by reference)？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing 又是甚麼呢？",
+    "description": "Javascript 是「傳值」(call/pass by value)還是「傳址（也有譯為「傳參考」）」(call/pass by reference)？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing（傳共享）又是甚麼呢？",
     "keywords": ["Javascript"],
     "image" : "https://sylvia-H.github.io/images/posts/js/passByValue_byReference_bySharing.png",
     "mainEntityOfPage": {
@@ -1675,6 +1675,8 @@ if (!doNotTrack) {
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Oct 13, 2021 </time>
   
+  &nbsp;&middot;&nbsp; <time class="single__info" title="Modified At"> 📝&nbsp;Oct 14, 2021 </time>
+  
   &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;9&nbsp;min read </span>
   
   <span class="single__info">
@@ -1789,7 +1791,7 @@ if (!doNotTrack) {
 </tbody>
 </table>
 <p>但為什麼說上面這個說法是「傳統說法」呢？</p>
-<p>因為也有人認為 Javascript <em>既不是傳值也不是傳址</em>，而是「有時看起來像傳值，有時看起來像傳址」， <strong>實際上應該說是「pass/call by sharing」</strong> 。</p>
+<p>因為也有人認為 Javascript <em>既不是傳值也不是傳址</em>，而是「有時看起來像傳值，有時看起來像傳址」， <strong>實際上應該說是「傳共享（pass/call by sharing）」</strong> 。</p>
 <p>但也有人認為 Javascript <em>沒有所謂的「call by reference」或「call by sharing」</em>，<strong>實際上就只有「傳值」(call/pass by value)</strong>。</p>
 <p>這眾說紛紜的狀況是怎麼回事呢？要釐清這道經典的爭議題，就讓我們先從傳統的說法來理解何謂「傳值」？何謂「傳址」？</p>
 <h3 id="何謂傳值callpass-by-value">何謂「傳值（call/pass by value）」？</h3>
@@ -2178,7 +2180,7 @@ if (!doNotTrack) {
 </div><p>在上面這個例子中，把 <code>obj</code> 傳入函式 <code>changeObj(obj);</code> 裡面，並對 <code>obj</code> 重新賦值。如果物件型別的值是「傳址」的話， <code>obj</code> 應該會被指向新的記憶體位置，且其值會變成 <code>{key2: 'cc'}</code>。</p>
 <p>但最後結果卻是 <code>obj</code> 並未被更動，仍維持舊值。</p>
 <p>這樣看來，物件型別的值在參數的傳遞上，<strong>既不是 pass by value 也不是 pass by reference</strong>。</p>
-<p>由於有這些奇怪的狀況，所以才有說法認為 Javascript 不是「by value」，也不是「by reference」<strong>而是「pass by sharing</strong>」。</p>
+<p>由於有這些奇怪的狀況，所以才有說法認為 Javascript 不是「傳值（by value）」，也不是「傳址（by reference）」<strong>而是「傳共享（pass by sharing）</strong>」。</p>
 <p>意思就是說，讓 function 裡面 <code>xyz</code> 跟外面的 <code>obj</code> 「共享」同一個 object，所以可以透過 function 裡面的 xyz 修改「共享到的那個 object」的資料。</p>
 <h3 id="其實-javascript-實際上就只有傳值by-value">其實 Javascript 實際上就只有「傳值(by value)」</h3>
 <p>看到這個副標，你大概會想：「很好，現在又是甚麼狀況？」</p>
@@ -2425,7 +2427,7 @@ if (!doNotTrack) {
       
     
       
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsylvia-H.github.io%2fen%2fposts%2f2021%2f1013_byvaluereferencesharing%2f&title=Javascript%20%e7%9a%84%e5%8f%83%e6%95%b8%e5%82%b3%e9%81%9e%ef%bc%9aby%20reference%20%28%e5%82%b3%e5%9d%80%2f%e5%82%b3%e5%8f%83%e8%80%83%29%e3%80%81by%20value%ef%bc%88%e5%82%b3%e5%80%bc%ef%bc%89%e5%92%8c%20by%20sharing%ef%bc%88%e5%82%b3%e5%85%b1%e4%ba%ab%ef%bc%89 &summary=Javascript%20%e6%98%af%e3%80%8c%e5%82%b3%e5%80%bc%e3%80%8d%28call%2fpass%20by%20value%29%e9%82%84%e6%98%af%e3%80%8c%e5%82%b3%e5%9d%80%ef%bc%88%e4%b9%9f%e6%9c%89%e8%ad%af%e7%82%ba%e3%80%8c%e5%82%b3%e5%8f%83%e8%80%83%e3%80%8d%ef%bc%89%e3%80%8d%28call%2fpass%20by%20reference%29%ef%bc%9f%e5%8f%af%e8%aa%aa%e6%98%af%20Javascript%20%e7%9a%84%e8%90%ac%e5%b9%b4%e7%88%ad%e8%ad%b0%e7%b6%93%e5%85%b8%e9%a1%8c%e7%9b%ae%e3%80%82%e7%a9%b6%e7%ab%9f%e5%85%a9%e8%80%85%e5%ae%9a%e7%be%a9%e7%82%ba%e4%bd%95%ef%bc%9f%e6%9c%89%e7%94%9a%e9%ba%bc%e5%b7%ae%e5%88%a5%ef%bc%9f%e5%8f%a6%e5%a4%96%20call%2fpass%20by%20sharing%20%e5%8f%88%e6%98%af%e7%94%9a%e9%ba%bc%e5%91%a2%ef%bc%9f&source=%e7%b4%80%e9%8c%84%20F2E%20%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92%e6%ad%b7%e7%a8%8b%20F2E%20Journey" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsylvia-H.github.io%2fen%2fposts%2f2021%2f1013_byvaluereferencesharing%2f&title=Javascript%20%e7%9a%84%e5%8f%83%e6%95%b8%e5%82%b3%e9%81%9e%ef%bc%9aby%20reference%20%28%e5%82%b3%e5%9d%80%2f%e5%82%b3%e5%8f%83%e8%80%83%29%e3%80%81by%20value%ef%bc%88%e5%82%b3%e5%80%bc%ef%bc%89%e5%92%8c%20by%20sharing%ef%bc%88%e5%82%b3%e5%85%b1%e4%ba%ab%ef%bc%89 &summary=Javascript%20%e6%98%af%e3%80%8c%e5%82%b3%e5%80%bc%e3%80%8d%28call%2fpass%20by%20value%29%e9%82%84%e6%98%af%e3%80%8c%e5%82%b3%e5%9d%80%ef%bc%88%e4%b9%9f%e6%9c%89%e8%ad%af%e7%82%ba%e3%80%8c%e5%82%b3%e5%8f%83%e8%80%83%e3%80%8d%ef%bc%89%e3%80%8d%28call%2fpass%20by%20reference%29%ef%bc%9f%e5%8f%af%e8%aa%aa%e6%98%af%20Javascript%20%e7%9a%84%e8%90%ac%e5%b9%b4%e7%88%ad%e8%ad%b0%e7%b6%93%e5%85%b8%e9%a1%8c%e7%9b%ae%e3%80%82%e7%a9%b6%e7%ab%9f%e5%85%a9%e8%80%85%e5%ae%9a%e7%be%a9%e7%82%ba%e4%bd%95%ef%bc%9f%e6%9c%89%e7%94%9a%e9%ba%bc%e5%b7%ae%e5%88%a5%ef%bc%9f%e5%8f%a6%e5%a4%96%20call%2fpass%20by%20sharing%ef%bc%88%e5%82%b3%e5%85%b1%e4%ba%ab%ef%bc%89%e5%8f%88%e6%98%af%e7%94%9a%e9%ba%bc%e5%91%a2%ef%bc%9f&source=%e7%b4%80%e9%8c%84%20F2E%20%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92%e6%ad%b7%e7%a8%8b%20F2E%20Journey" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
           <svg data-name="linkedin" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
         </a>
       
