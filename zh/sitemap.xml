@@ -29,12 +29,42 @@
   </url><url>
     <loc>https://sylvia-H.github.io/posts/</loc>
     <lastmod>2021-10-14T15:25:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://sylvia-H.github.io/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://sylvia-H.github.io/posts/"
+                />
   </url><url>
     <loc>https://sylvia-H.github.io/archive/</loc>
     <lastmod>2021-10-14T15:25:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://sylvia-H.github.io/en/archive/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://sylvia-H.github.io/archive/"
+                />
   </url><url>
     <loc>https://sylvia-H.github.io/about/</loc>
     <lastmod>2021-10-14T15:25:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://sylvia-H.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://sylvia-H.github.io/about/"
+                />
   </url><url>
     <loc>https://sylvia-H.github.io/categories/</loc>
     <lastmod>2021-10-13T15:49:11+08:00</lastmod>
@@ -58,9 +88,6 @@
     <loc>https://sylvia-H.github.io/en/posts/2021/1013_byvaluereferencesharing/</loc>
     <lastmod>2021-10-13T15:49:11+08:00</lastmod>
   </url><url>
-    <loc>https://sylvia-H.github.io/posts/2021/1013_byvaluereferencesharing/</loc>
-    <lastmod>2021-10-13T15:49:11+08:00</lastmod>
-  </url><url>
     <loc>https://sylvia-H.github.io/tags/</loc>
     <lastmod>2021-10-13T15:49:11+08:00</lastmod>
     <xhtml:link
@@ -75,9 +102,6 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/en/posts/2021/0919_language-type/</loc>
-    <lastmod>2021-09-19T20:13:11+08:00</lastmod>
-  </url><url>
-    <loc>https://sylvia-H.github.io/posts/2021/0919_language-type/</loc>
     <lastmod>2021-09-19T20:13:11+08:00</lastmod>
   </url><url>
     <loc>https://sylvia-H.github.io/series/</loc>
