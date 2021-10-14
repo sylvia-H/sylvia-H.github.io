@@ -3,8 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sylvia-H.github.io/en/categories/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -17,8 +15,6 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/en/series/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -31,8 +27,6 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/en/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -45,8 +39,6 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/en/tags/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
