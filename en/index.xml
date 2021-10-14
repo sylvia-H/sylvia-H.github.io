@@ -51,7 +51,7 @@
         <description>Javascript 的參數傳遞: by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享） 從比較運算子來釐清基本觀念 在正式進入這個主題之前，我們先來複習一下 JavaScript 的基本觀念。首先是「比較運算子」： 1 2 3 let a =</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-H.github.ioimages/posts/js/passByValue_byReference_bySharing.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-H.github.ioimages/posts/js/2021-10-13/passByValue_byReference_bySharing.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -81,7 +81,7 @@
         <description>型別名詞釋義: 靜態型別 動態型別 隱性型別 強型別 弱型別 在釐清 Javascript 的資料型別的過程中，一不小心踏入了這個名詞坑。 一開始只是想釐清 Javascript 的資料型別，讀到 MDN 一篇關於 JavaScript 的資料型別與資料結構的文章，文中出現「動態型別」一</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-H.github.ioimages/posts/js/type_paraphrase.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-H.github.ioimages/posts/js/2021-09-19/type_paraphrase.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
