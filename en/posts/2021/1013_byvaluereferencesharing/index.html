@@ -1789,8 +1789,8 @@ if (!doNotTrack) {
 </tbody>
 </table>
 <p>但為什麼說上面這個說法是「傳統說法」呢？</p>
-<p>因為也有人認為 Javascript <em>既不是傳值也不是傳址</em>，而是「有時看起來像傳值，有時看起來像傳址」， <strong>實際上應該說是「傳共享（pass/call by sharing）」</strong> 。</p>
-<p>但也有人認為 Javascript <em>沒有所謂的「call by reference」或「call by sharing」</em>，<strong>實際上就只有「傳值」(call/pass by value)</strong>。</p>
+<p>因為也有人認為 Javascript <strong>既不是傳值也不是傳址</strong>，而是「有時看起來像傳值，有時看起來像傳址」， <strong>實際上應該說是「傳共享（pass/call by sharing）」</strong> 。</p>
+<p>但也有人認為 Javascript <strong>沒有所謂的「傳址」或「傳共享」</strong>，<strong>實際上就只有「傳值」(call/pass by value)</strong>。</p>
 <p>這眾說紛紜的狀況是怎麼回事呢？要釐清這道經典的爭議題，就讓我們先從傳統的說法來理解何謂「傳值」？何謂「傳址」？</p>
 <h3 id="何謂傳值callpass-by-value">何謂「傳值（call/pass by value）」？</h3>
 <p>對電腦來說，實際儲存和呼叫資料是以「記憶體位址」來運作，而宣告變數，就是來幫助我們以別名來與實際的資料儲存位址作連結。變數會指向記憶體位置來調用資料進行運算。</p>
@@ -2031,7 +2031,8 @@ if (!doNotTrack) {
 
 </div>
 <h3 id="關於-pass-by-sharing-的討論">關於 pass by sharing 的討論</h3>
-<p>而物件型別的「傳址」又還有一個<strong>例外情況</strong>，故又有討論認為 Javascript 的策略其實不是「pass by value」，也不是「pass by reference」而是「pass by sharing」。這點就見仁見智，此處對於 Javascript 究竟是不是該歸屬於「pass by sharing」不去細究，想進一步了解的話可再從下方的參考資料中去延伸閱讀。</p>
+<p>而物件型別的「傳址」又還有一個<strong>例外情況</strong>，故又有討論認為 Javascript 的策略其實不是「傳值（call/pass by value）」，也不是「傳址（call/pass by reference）」而是「傳共享（call/pass by sharing）」。</p>
+<p>這點就見仁見智了，此處對於 Javascript 究竟是不是該歸屬於「pass by sharing」不去細究，想進一步了解的話可再從下方的參考資料中去延伸閱讀。</p>
 <p>此處只對這個<strong>例外情況</strong>稍作說明，這個例外情況是什麼呢？</p>
 <p>就是當變數的值為物件型別，變數間做 <code>=</code> 賦值時，傳遞的是變數的記憶體位址，即「<strong>傳址</strong>」，但如果此時又再對其中一個變數用 <strong>物件實字（object literal）</strong> 的方式<strong>重新賦值</strong>，或在物件中<strong>加入新的 key 屬性</strong>的話，那麼，原本指向同一個記憶體位址的兩個變數，其中重新賦值的那個變數會指向不同的記憶體位址來儲存新的值。</p>
 <div class="highlight"><div class="chroma">
