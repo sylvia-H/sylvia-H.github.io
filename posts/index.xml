@@ -21,6 +21,46 @@
 
       
       <item>
+        <title>【JS30系列】Day 01：JavaScript Drum Kit</title>
+        <link>https://sylvia-H.github.io/posts/2021/javascript30_day01/</link>
+        <pubDate>Tue, 19 Oct 2021 17:42:11 +0800</pubDate>
+        <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
+        <atom:modified>Tue, 19 Oct 2021 17:42:11 +0800</atom:modified>
+        <guid>https://sylvia-H.github.io/posts/2021/javascript30_day01/</guid>
+        <description>Javascript 30 Day01: JavaScript Drum Kit Wes Bos 的原始專案：JS30 Day01 Day 01 專案完成前 Day 01 專案完成後 專案目標： 按下與畫面上對應的鍵盤按鍵時，相應的方框會稍微放大字體 外框會發出黃色光暈 同時撥放音檔 我的解法： 實作成果 1 2 3 4 5 6 7 8 9 10 11</description>
+        
+        <dc:creator>Sylvia-H</dc:creator>
+        <media:content url="https://sylvia-H.github.ioimages/posts/js30/js30.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>JS30</category>
+            
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>JS30</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>Javascript 的參數傳遞：by reference（傳址/傳參考）、by value（傳值）和 by sharing（傳共享）</title>
         <link>https://sylvia-H.github.io/posts/2021/1013_byvalue_reference_sharing/</link>
         <pubDate>Wed, 13 Oct 2021 15:49:11 +0800</pubDate>
