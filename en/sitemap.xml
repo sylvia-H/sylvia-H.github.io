@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sylvia-H.github.io/en/categories/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/categories/</loc>
     <lastmod>2021-10-19T17:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -15,7 +15,7 @@
                 href="https://sylvia-H.github.io/en/categories/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/tags/javascript/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/tags/javascript/</loc>
     <lastmod>2021-10-19T17:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -28,7 +28,7 @@
                 href="https://sylvia-H.github.io/en/tags/javascript/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/categories/javascript/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/categories/javascript/</loc>
     <lastmod>2021-10-19T17:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -41,7 +41,7 @@
                 href="https://sylvia-H.github.io/en/categories/javascript/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/tags/js30/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/tags/js30/</loc>
     <lastmod>2021-10-19T17:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -54,7 +54,7 @@
                 href="https://sylvia-H.github.io/en/tags/js30/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/series/js30/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/series/js30/</loc>
     <lastmod>2021-10-19T17:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -67,7 +67,7 @@
                 href="https://sylvia-H.github.io/en/series/js30/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/series/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/series/</loc>
     <lastmod>2021-10-19T17:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -93,7 +93,7 @@
                 href="https://sylvia-H.github.io/en/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/tags/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/tags/</loc>
     <lastmod>2021-10-19T17:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -106,7 +106,7 @@
                 href="https://sylvia-H.github.io/en/tags/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/posts/2021/javascript30_day01/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/posts/2021/javascript30_day01/</loc>
     <lastmod>2021-10-19T17:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -119,7 +119,7 @@
                 href="https://sylvia-H.github.io/en/posts/2021/javascript30_day01/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/about/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/about/</loc>
     <lastmod>2021-10-14T15:25:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -132,7 +132,7 @@
                 href="https://sylvia-H.github.io/en/about/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/archive/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/archive/</loc>
     <lastmod>2021-10-14T15:25:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -145,7 +145,7 @@
                 href="https://sylvia-H.github.io/en/archive/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/posts/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/posts/</loc>
     <lastmod>2021-10-14T15:25:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -158,7 +158,7 @@
                 href="https://sylvia-H.github.io/en/posts/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/posts/2021/1013_byvalue_reference_sharing/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/posts/2021/1013_byvalue_reference_sharing/</loc>
     <lastmod>2021-10-13T15:49:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -171,7 +171,7 @@
                 href="https://sylvia-H.github.io/en/posts/2021/1013_byvalue_reference_sharing/"
                 />
   </url><url>
-    <loc>https://sylvia-H.github.io/en/posts/2021/0919_language-type/index.html</loc>
+    <loc>https://sylvia-H.github.io/en/posts/2021/0919_language-type/</loc>
     <lastmod>2021-09-19T20:13:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
