@@ -14,7 +14,7 @@
     <managingEditor>sylvie11gaia@gmail.com (Sylvia-H)</managingEditor>
     <webMaster>sylvie11gaia@gmail.com (Sylvia-H)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 19 Oct 2021 17:42:11 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Oct 2021 19:42:11 +0800</lastBuildDate>
     
         <atom:link href="https://sylvia-H.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     
@@ -42,6 +42,46 @@
 
       
       <item>
+        <title>【JS30系列】Day 02：CSS &#43; JS Clock</title>
+        <link>https://sylvia-H.github.io/en/posts/2021/javascript30_day02/</link>
+        <pubDate>Wed, 20 Oct 2021 19:42:11 +0800</pubDate>
+        <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
+        <atom:modified>Wed, 20 Oct 2021 19:42:11 +0800</atom:modified>
+        <guid>https://sylvia-H.github.io/en/posts/2021/javascript30_day02/</guid>
+        <description>Javascript 30 Day02: CSS &amp;#43; JS Clock Wes Bos 的原始專案：JS30 Day02 Day 02 專案完成前 Day 02 專案完成後 專案目標： 製作一個時、分、秒針能實時運轉的小時鐘。 我的解法： 實作成果 1 2 3 4 5 6 7 8 9 .hand { width: 0; height: 0; position: absolute; top: 50%; border-style: solid; border-width: 3px 15rem 3px 0; transform-origin: 100%; } 1 2 3</description>
+        
+        <dc:creator>Sylvia-H</dc:creator>
+        <media:content url="https://sylvia-H.github.ioimages/posts/js30/JS30_day02.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>JS30</category>
+            
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>JS30</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>【JS30系列】Day 01：JavaScript Drum Kit</title>
         <link>https://sylvia-H.github.io/en/posts/2021/javascript30_day01/</link>
         <pubDate>Tue, 19 Oct 2021 17:42:11 +0800</pubDate>
@@ -51,7 +91,7 @@
         <description>Javascript 30 Day01: JavaScript Drum Kit Wes Bos 的原始專案：JS30 Day01 Day 01 專案完成前 Day 01 專案完成後 專案目標： 按下與畫面上對應的鍵盤按鍵時，相應的方框會稍微放大字體 外框會發出黃色光暈 同時撥放音檔 我的解法： 實作成果 1 2 3 4 5 6 7 8 9 10 11</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-H.github.ioimages/posts/js30/js30.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-H.github.ioimages/posts/js30/JS30_day01.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
