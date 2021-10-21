@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sylvia-H.github.io/categories/</loc>
-    <lastmod>2021-10-20T20:42:11+08:00</lastmod>
+    <lastmod>2021-10-21T16:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/tags/javascript/</loc>
-    <lastmod>2021-10-20T20:42:11+08:00</lastmod>
+    <lastmod>2021-10-21T16:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/categories/javascript/</loc>
-    <lastmod>2021-10-20T20:42:11+08:00</lastmod>
+    <lastmod>2021-10-21T16:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/tags/js30/</loc>
-    <lastmod>2021-10-20T20:42:11+08:00</lastmod>
+    <lastmod>2021-10-21T16:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,7 +55,7 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/series/js30/</loc>
-    <lastmod>2021-10-20T20:42:11+08:00</lastmod>
+    <lastmod>2021-10-21T16:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -68,7 +68,7 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/series/</loc>
-    <lastmod>2021-10-20T20:42:11+08:00</lastmod>
+    <lastmod>2021-10-21T16:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -81,7 +81,7 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/</loc>
-    <lastmod>2021-10-20T20:42:11+08:00</lastmod>
+    <lastmod>2021-10-21T16:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -94,7 +94,7 @@
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/tags/</loc>
-    <lastmod>2021-10-20T20:42:11+08:00</lastmod>
+    <lastmod>2021-10-21T16:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -104,6 +104,19 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://sylvia-H.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://sylvia-H.github.io/posts/2021/javascript30_day03/</loc>
+    <lastmod>2021-10-21T16:42:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://sylvia-H.github.io/en/posts/2021/javascript30_day03/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://sylvia-H.github.io/posts/2021/javascript30_day03/"
                 />
   </url><url>
     <loc>https://sylvia-H.github.io/posts/2021/javascript30_day02/</loc>
