@@ -21,12 +21,30 @@
 
       
       <item>
-        <title>Javascript</title>
-        <link>https://sylvia-H.github.io/en/categories/javascript/</link>
+        <title>JS30 series</title>
+        <link>https://sylvia-H.github.io/en/categories/js30-series/</link>
         <pubDate>Thu, 21 Oct 2021 16:42:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
         
-        <guid>https://sylvia-H.github.io/en/categories/javascript/</guid>
+        <guid>https://sylvia-H.github.io/en/categories/js30-series/</guid>
+        <description></description>
+        
+        <dc:creator>Sylvia-H</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Javascript fundamental concepts</title>
+        <link>https://sylvia-H.github.io/en/categories/javascript-fundamental-concepts/</link>
+        <pubDate>Wed, 13 Oct 2021 15:49:11 +0800</pubDate>
+        <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
+        
+        <guid>https://sylvia-H.github.io/en/categories/javascript-fundamental-concepts/</guid>
         <description></description>
         
         <dc:creator>Sylvia-H</dc:creator>
