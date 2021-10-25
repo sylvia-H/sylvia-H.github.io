@@ -667,15 +667,15 @@
     
     var enableSearch = JSON.parse("true");
     
-    var searchDistance = JSON.parse("null");
+    var searchDistance = JSON.parse("100");
     
-    var searchThreshold = JSON.parse("null");
+    var searchThreshold = JSON.parse("0.4");
     
-    var searchContent = JSON.parse("null");
+    var searchContent = JSON.parse("true");
     
     var enableSearchHighlight = JSON.parse("true");
     
-    var searchResultPosition = JSON.parse("null");
+    var searchResultPosition = JSON.parse("\"main\"");
     
     var sectionType = JSON.parse("\"page\"");
     
@@ -1422,8 +1422,6 @@ if (!doNotTrack) {
 
 
 
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
     
 </head>
 
@@ -1625,7 +1623,7 @@ if (!doNotTrack) {
   window.onload = function() {
     
     
-    var enableBusuanzi = JSON.parse("true");
+    var enableBusuanzi = JSON.parse("false");
     if (enableBusuanzi) {
       var sitePvElem = document.querySelector('#busuanzi_value_site_pv');
       var siteUvElem = document.querySelector('#busuanzi_value_site_uv');
@@ -1765,28 +1763,6 @@ if (!doNotTrack) {
 
     <div class="footer__poweredby">
         
-  <div class="busuanzi">
-    
-    
-      <div class="busuanzi__item">
-        <span class="busuanzi__item--label">
-          總訪客
-        </span>
-        <span id="busuanzi_value_site_uv" class="busuanzi__item--number">...</span>
-      </div>
-    
-
-    
-      <div class="busuanzi__item">
-        <span class="busuanzi__item--label">
-          總瀏覽
-        </span>
-        <span id="busuanzi_value_site_pv" class="busuanzi__item--number">...</span>
-      </div>
-    
-
-  </div>
-
                 
             <p class="caption">
                 
