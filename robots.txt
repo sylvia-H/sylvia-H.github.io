@@ -1,1 +1,4 @@
 User-agent: *
+Allow: /
+
+Sitemap: https://sylvia-H.github.io/sitemap.xml
