@@ -1422,6 +1422,8 @@ if (!doNotTrack) {
 
 
 
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
     
 </head>
 
@@ -1623,7 +1625,7 @@ if (!doNotTrack) {
   window.onload = function() {
     
     
-    var enableBusuanzi = JSON.parse("false");
+    var enableBusuanzi = JSON.parse("true");
     if (enableBusuanzi) {
       var sitePvElem = document.querySelector('#busuanzi_value_site_pv');
       var siteUvElem = document.querySelector('#busuanzi_value_site_uv');
@@ -1763,6 +1765,28 @@ if (!doNotTrack) {
 
     <div class="footer__poweredby">
         
+  <div class="busuanzi">
+    
+    
+      <div class="busuanzi__item">
+        <span class="busuanzi__item--label">
+          總訪客
+        </span>
+        <span id="busuanzi_value_site_uv" class="busuanzi__item--number">...</span>
+      </div>
+    
+
+    
+      <div class="busuanzi__item">
+        <span class="busuanzi__item--label">
+          總瀏覽
+        </span>
+        <span id="busuanzi_value_site_pv" class="busuanzi__item--number">...</span>
+      </div>
+    
+
+  </div>
+
                 
             <p class="caption">
                 
