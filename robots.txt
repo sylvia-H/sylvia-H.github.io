@@ -1,7 +1,1 @@
 User-agent: *
-Allow: /
-Allow: /posts/
-Allow: /posts/2021/
-Allow: /series/
-
-Sitemap: https://sylvia-h.github.io/sitemap.xml
