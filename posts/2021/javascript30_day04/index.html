@@ -1335,16 +1335,16 @@
 
 
     
-<meta name="description" content="熟悉陣列操作方法：filter()、map()、sort()、reduce()...等等。" />
+<meta name="description" content="熟悉陣列操作方法：filter()、map()、sort()、reduce()、from()、includes()、slice()" />
 
 <meta name="keywords" content="JS30,filter,map,sort,reduce,Javascript,Wes Bos,Sylvia-H">
 
 
 <meta name="keywords" content="JS30,Javascript">
 
-<meta name="created" content="2021-10-27T17:42:11&#43;0800">
-<meta name="modified" content="2021-10-27T17:42:11&#43;0800">
-<meta property="article:published_time" content="2021-10-27T17:42:11&#43;0800">
+<meta name="created" content="2021-10-28T17:42:11&#43;0800">
+<meta name="modified" content="2021-10-28T17:42:11&#43;0800">
+<meta property="article:published_time" content="2021-10-28T17:42:11&#43;0800">
 
 <meta name="author" content="Sylvia-H">
 
@@ -1353,7 +1353,7 @@
 <meta property="og:title" content="【JS30系列】Day 04：Array Cardio Day 1">
 <meta property="og:url" content="https://sylvia-h.github.io/posts/2021/javascript30_day04/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="熟悉陣列操作方法：filter()、map()、sort()、reduce()...等等。">
+<meta property="og:description" content="熟悉陣列操作方法：filter()、map()、sort()、reduce()、from()、includes()、slice()">
 
   
     <meta property="og:image" content="https://sylvia-h.github.io/images/posts/js30/js30.png">
@@ -1361,7 +1361,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="Sylvia&#39;s Babel">
     <meta property="twitter:title" content="【JS30系列】Day 04：Array Cardio Day 1">
-    <meta property="twitter:description" content="熟悉陣列操作方法：filter()、map()、sort()、reduce()...等等。">
+    <meta property="twitter:description" content="熟悉陣列操作方法：filter()、map()、sort()、reduce()、from()、includes()、slice()">
   
 
 <meta name="generator" content="Hugo 0.86.0" />
@@ -1388,10 +1388,10 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "headline": "【JS30系列】Day 04：Array Cardio Day 1",
-    "datePublished": "2021-10-27T17:42:11+08:00",
-    "dateModified": "2021-10-27T17:42:11+08:00",
+    "datePublished": "2021-10-28T17:42:11+08:00",
+    "dateModified": "2021-10-28T17:42:11+08:00",
     "url" : "https://sylvia-h.github.io/posts/2021/javascript30_day04/",
-    "description": "熟悉陣列操作方法：filter()、map()、sort()、reduce()...等等。",
+    "description": "熟悉陣列操作方法：filter()、map()、sort()、reduce()、from()、includes()、slice()",
     "keywords": ["JS30","Javascript"],
     "image" : "https://sylvia-h.github.io/images/posts/js30/js30.png",
     "mainEntityOfPage": {
@@ -1677,9 +1677,9 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="創建日期">📅&nbsp;2021年10月27日 </time>
+  <time class="single__info" title="創建日期">📅&nbsp;2021年10月28日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="閱讀時長"> ☕&nbsp;2&nbsp;分鐘 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="閱讀時長"> ☕&nbsp;5&nbsp;分鐘 </span>
   
   <span class="single__info">
      &middot; 👀<span id="busuanzi_value_page_pv">...</span> 閱讀
@@ -1708,9 +1708,9 @@ if (!doNotTrack) {
 </ul>
 <br>
 <h4 id="專案目標">專案目標：</h4>
-<p>熟悉陣列操作方法：filter()、map()、sort()、reduce()&hellip;等等。<br />
+<p>熟悉陣列操作方法：filter()、map()、sort()、reduce()、from()、includes()、slice()。<br />
 此範例瀏覽器不會渲染出畫面，純粹用陣列操作方法來篩選出資料。</p>
-<p><a href="https://sylvia-h.github.io/JavaScript30/03%20-%20CSS%20Variables/index-sylvia.html">實作成果</a></p>
+<p><a href="https://sylvia-h.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/index-sylvia.html">實作成果</a></p>
 <br>
 <h4 id="資料集">資料集</h4>
 <p>題目給了兩筆資料集，以下共有 8 道題目要從以下兩個資料集中篩選出目標物件資料。</p>
@@ -1768,10 +1768,12 @@ if (!doNotTrack) {
 <br>
 <h4 id="第一題篩選出生在-1500-年代的發明家">第一題：篩選出生在 1500 年代的發明家</h4>
 <p>本題要從 <code>inventors</code> 資料集篩選出生在 1500 年代的發明家。</p>
+<p><code>filter()</code> 方法，會將陣列中的「每一個元素」帶入指定的函式內做判斷，透過 <code>return</code> 回傳判斷結果為 <code>true</code> 的元素，並組成新的陣列。</p>
+<p>裡頭有一個函式 ( 必填 ) 和一個回傳函式裡的 this 參數 ( 選填 )。<br />
+函式內包含三個參數，第一個是每個元素的值 ( 必填 )，第二個是當前元素的索引值 ( 選填 )，第三個是當前的陣列 ( 選填 )。</p>
 <div class="alert alert-success" role="alert" data-dir="ltr">filter 語法：<br />
 let newArray = arr.filter(callback(element, index, array), thisArg);</div>
-<p><code>filter()</code> 方法，會將陣列中的「每一個元素」帶入指定的函式內做判斷，透過 <code>return</code> 回傳判斷結果為 <code>true</code> 的元素，並組成新的陣列。</p>
-<br>
+<h5 id="本題解法">本題解法</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1795,13 +1797,15 @@ let newArray = arr.filter(callback(element, index, array), thisArg);</div>
 </div><br>
 <br>
 <h4 id="第二題將發明家的姓氏名字組合起來回傳一個新陣列">第二題：將發明家的姓氏、名字組合起來，回傳一個新陣列</h4>
+<p><code>map()</code> 方法，會將陣列中的「每一個元素」帶入指定的函式內做判斷，透過 <code>return</code> 回傳運算後的結果，並組成新的陣列。</p>
+<p>裡頭有一個函式 ( 必填 ) 和一個回傳函式裡的 this 參數 ( 選填 )。<br />
+函式內包含三個參數，第一個是每個元素的值 ( 必填 )，第二個是當前元素的索引值 ( 選填 )，第三個是當前的陣列 ( 選填 )。</p>
 <div class="alert alert-success" role="alert" data-dir="ltr"><p>map 語法：<br />
 let new_array = arr.map(callback(currentValue, index, array));</p>
 <p>如果要使用 this 參數，則「不能使用」箭頭函式：<br />
 let new_array = arr.map(function callback(currentValue, index, array){}, thisArg);</p>
 </div>
-<p><code>map()</code> 方法，會將陣列中的「每一個元素」帶入指定的函式內做判斷，透過 <code>return</code> 回傳運算後的結果，並組成新的陣列。</p>
-<br>
+<h5 id="本題解法-1">本題解法</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1824,29 +1828,236 @@ let new_array = arr.map(function callback(currentValue, index, array){}, thisArg
 </div>
 </div><br>
 <br>
-<h4 id="第三題">第三題：</h4>
+<h4 id="第三題將發明家的生日由老到少排序">第三題：將發明家的生日由老到少排序</h4>
+<p><code>sort()</code> 方法，會以一個排序用的判斷函式來對陣列的元素進行排序。判斷函式包含兩個參數，這兩個參數分別代表陣列裡第 n 個和第 n+1 個元素，透過比較第 n 和第 n+1 個元素的大小來進行排序。</p>
+<p>如果不使用判斷函式的話，預設會將元素轉換成字串，並以首字母的 unicode 來判斷大小。</p>
+<ul>
+<li>若 compareFunction(a, b) 的回傳值小於 0，則會把 a 排在小於 b 之索引的位置，即 a 排在 b 前面。</li>
+<li>若 compareFunction(a, b) 回傳 0，則 a 與 b 皆不會改變彼此的順序，但會與其他全部的元素比較來排序。</li>
+<li>若 compareFunction(a, b) 的回傳值大於 0，則會把 b 排在小於 a 之索引的位置，即 b 排在 a 前面。</li>
+</ul>
 <br>
+<div class="alert alert-success" role="alert" data-dir="ltr">sort 語法：<br />
+arr.sort([compareFunction]);</div>
+<p>由於回傳值為負數的話，a 會 排在 b的前面。所以<strong>升冪排序</strong>陣列的作法如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">compareNumbers</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">-</span> <span class="nx">b</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>以此類推，<strong>降冪排序</strong>就改成 <code>b-a</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">compareNumbers</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">b</span> <span class="o">-</span> <span class="nx">a</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="本題解法-2">本題解法</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// Array.prototype.sort()
+</span><span class="c1">// 3. Sort the inventors by birthdate, oldest to youngest
+</span><span class="c1"></span>
+<span class="kd">let</span> <span class="nx">inventors_birth</span> <span class="o">=</span> <span class="nx">inventors</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
+  <span class="k">return</span> <span class="nx">a</span><span class="p">.</span><span class="nx">year</span> <span class="o">-</span> <span class="nx">b</span><span class="p">.</span><span class="nx">year</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">inventors_birth</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><br>
 <br>
+<h4 id="第四題把所有發明家的歲數加總">第四題：把所有發明家的歲數加總</h4>
+<p><code>reduce()</code> 方法是做數值累加，會將陣列中的「每一個元素」與下個元素相加，直到結束為止。</p>
+<p>包含一個函式 ( 必填 ) 和初始值 ( 選填 )。<br />
+函式內有四個參數，第一個是累加器 ( 必填 )，第二個是當前元素 ( 必填 )，第三個是該元素的索引值 ( 選填 )，第四個是原本的陣列 ( 選填 )。</p>
+<div class="alert alert-success" role="alert" data-dir="ltr">reduce 語法：<br />
+arr.reduce(callback[accumulator, currentValue, currentIndex, array], initialValue);</div>
+<h5 id="本題解法-3">本題解法</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// Array.prototype.reduce()
+</span><span class="c1">// 4. How many years did all the inventors live all together?
+</span><span class="c1"></span>
+<span class="kd">let</span> <span class="nx">inventors_live</span> <span class="o">=</span> <span class="nx">inventors</span><span class="p">.</span><span class="nx">reduce</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">total</span><span class="p">,</span> <span class="nx">el</span><span class="p">){</span>
+  <span class="k">return</span> <span class="nx">total</span> <span class="o">+</span> <span class="p">(</span><span class="nx">el</span><span class="p">.</span><span class="nx">passed</span> <span class="o">-</span> <span class="nx">el</span><span class="p">.</span><span class="nx">year</span><span class="p">);</span>
+<span class="p">},</span> <span class="mi">0</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">inventors_live</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><br>
 <br>
-<h4 id="第四題">第四題：</h4>
+<h4 id="第五題將所有發明家依歲數大小排序">第五題：將所有發明家依歲數大小排序</h4>
+<p>本題使用第三題用過的 <code>sort()</code> 方法。</p>
+<h5 id="本題解法-4">本題解法</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 5. Sort the inventors by years lived
+</span><span class="c1"></span>
+<span class="kd">let</span> <span class="nx">inventors_age</span> <span class="o">=</span> <span class="nx">inventors</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
+  <span class="k">return</span> <span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">passed</span> <span class="o">-</span> <span class="nx">b</span><span class="p">.</span><span class="nx">year</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">passed</span> <span class="o">-</span> <span class="nx">a</span><span class="p">.</span><span class="nx">year</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">inventors_age</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><br>
 <br>
+<h4 id="第六題篩選出中含有de的街道名稱">第六題：篩選出中含有「de」的街道名稱</h4>
+<p>本題要從<a href="https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris">維基百科的一個資料頁面</a>中撈取資料，並進行過濾篩選。</p>
+<p>從該頁面中撈取出巴黎的街道名稱，並且篩選出中含有「de」的街道名稱。</p>
+<h5 id="本題解法-5">本題解法</h5>
+<ol>
+<li>用 <code>querySelectorAll</code> 撈出頁面的資料</li>
+<li>但撈出的資料是偽陣列 NodeList，必須用 <code>from()</code> 方法將其轉為真正的陣列</li>
+<li>轉成陣列後，用 <code>map()</code> 方法取出 title 資料組成新陣列</li>
+<li>最後用 <code>filter()</code> 和 <code>includes()</code> 方法過濾出有 &lsquo;de&rsquo; 字串的資料</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 6. create a list of Boulevards in Paris that contain &#39;de&#39; anywhere in the name
+</span><span class="c1">// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+</span><span class="c1"></span>
+<span class="kd">let</span> <span class="nx">source</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.mw-category-group li a&#39;</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">toArr</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nx">source</span><span class="p">);</span>   <span class="c1">// 將偽陣列 NodeList 用 from() 方法轉為真正的陣列
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="nx">toArr</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">el</span><span class="p">=&gt;{</span><span class="k">return</span> <span class="nx">el</span><span class="p">.</span><span class="nx">title</span><span class="p">;});</span>   <span class="c1">// 用 map() 方法取出 title 資料組成新陣列
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">resultArr</span> <span class="o">=</span> <span class="nx">newArr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">el</span><span class="p">=&gt;{</span><span class="k">return</span> <span class="nx">el</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;de&#39;</span><span class="p">);});</span>   <span class="c1">//用 filter() 和 includes() 方法過濾出有 &#39;de&#39; 字串的資料
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultArr</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><br>
 <br>
+<h4 id="第七題將-people-資料集的人名依首字母排序">第七題：將 people 資料集的人名依首字母排序</h4>
+<p>本題要將 <code>people</code> 資料集的人名依首字母進行排序。<br />
+除了使用第三題用過的 <code>sort()</code> 方法之外，也結合 <code>slice()</code> 方法擷取出字串的首字母。</p>
+<p><code>slice(begin, end)</code> 方法會回傳一個新陣列物件，為原陣列選擇之 begin 至 end（不含 end）部分的淺拷貝（shallow copy）。而原本的陣列將不會被修改。</p>
+<div class="alert alert-success" role="alert" data-dir="ltr">slice 語法：<br />
+arr.slice(begin, end);</div>
+<p>begin 是選填，若省略了 begin ，則 slice 會從索引 0 開始提取。<br />
+也可使用負數索引，表示由陣列的最末項開始提取。<br />
+例如：<code>slice(-2)</code> 代表拷貝陣列中的最後兩個元素。</p>
+<p>end 也是選填，若省略了 end，則 slice 會提取至陣列的最後一個元素。<br />
+若使用負數索引，表示由陣列的最末項開始提取。<br />
+例如：<code>slice(2,-1)</code> 代表拷貝陣列中第三個元素至倒數第二個元素。</p>
+<h5 id="本題解法-6">本題解法</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 7. sort Exercise
+</span><span class="c1">// Sort the people alphabetically by last name
+</span><span class="c1"></span>
+<span class="kd">let</span> <span class="nx">alphaArr</span> <span class="o">=</span> <span class="nx">people</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
+  <span class="kd">let</span> <span class="nx">A</span> <span class="o">=</span> <span class="nx">a</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">B</span> <span class="o">=</span> <span class="nx">b</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">A</span><span class="o">&gt;</span><span class="nx">B</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="nx">B</span><span class="o">&gt;</span><span class="nx">A</span> <span class="o">?</span> <span class="o">-</span><span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">alphaArr</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><br>
 <br>
-<h4 id="第五題">第五題：</h4>
-<br>
-<br>
-<br>
-<h4 id="第六題">第六題：</h4>
-<br>
-<br>
-<br>
-<h4 id="第七題">第七題：</h4>
-<br>
-<br>
-<br>
-<h4 id="第八題">第八題：</h4>
-<br>
-<br>
+<h4 id="第八題reduce-練習">第八題：Reduce 練習</h4>
+<p>本題結合 <code>if</code> 判斷以及物件的特性，來加深對 <code>reduce()</code> 方法的進階應用。</p>
+<p>把題目中所提供的陣列資料，依不同類別分別計算個數。</p>
+<h5 id="本題解法-7">本題解法</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 8. Reduce Exercise
+</span><span class="c1">// Sum up the instances of each of these
+</span><span class="c1"></span>
+<span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;car&#39;</span><span class="p">,</span> <span class="s1">&#39;car&#39;</span><span class="p">,</span> <span class="s1">&#39;truck&#39;</span><span class="p">,</span> <span class="s1">&#39;truck&#39;</span><span class="p">,</span> <span class="s1">&#39;bike&#39;</span><span class="p">,</span> <span class="s1">&#39;walk&#39;</span><span class="p">,</span> <span class="s1">&#39;car&#39;</span><span class="p">,</span> <span class="s1">&#39;van&#39;</span><span class="p">,</span> <span class="s1">&#39;bike&#39;</span><span class="p">,</span> <span class="s1">&#39;walk&#39;</span><span class="p">,</span> <span class="s1">&#39;car&#39;</span><span class="p">,</span> <span class="s1">&#39;van&#39;</span><span class="p">,</span> <span class="s1">&#39;car&#39;</span><span class="p">,</span> <span class="s1">&#39;truck&#39;</span> <span class="p">];</span>
+<span class="kd">let</span> <span class="nx">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">calcItems</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">obj</span><span class="p">,</span><span class="nx">el</span><span class="p">)=&gt;{</span>
+  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">obj</span><span class="p">[</span><span class="nx">el</span><span class="p">]){</span>
+    <span class="nx">obj</span><span class="p">[</span><span class="nx">el</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="nx">total</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span><span class="p">{</span>
+    <span class="nx">obj</span><span class="p">[</span><span class="nx">el</span><span class="p">]</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="nx">total</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">obj</span><span class="p">;</span>
+<span class="p">},{});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">calcItems</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">total</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><br>
 <br>
 <blockquote>
 <p>延伸閱讀：</p>
@@ -2071,7 +2282,7 @@ let new_array = arr.map(function callback(currentValue, index, array){}, thisArg
       
     
       
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2fjavascript30_day04%2f&title=%e3%80%90JS30%e7%b3%bb%e5%88%97%e3%80%91Day%2004%ef%bc%9aArray%20Cardio%20Day%201 &summary=%e7%86%9f%e6%82%89%e9%99%a3%e5%88%97%e6%93%8d%e4%bd%9c%e6%96%b9%e6%b3%95%ef%bc%9afilter%28%29%e3%80%81map%28%29%e3%80%81sort%28%29%e3%80%81reduce%28%29...%e7%ad%89%e7%ad%89%e3%80%82&source=%e7%b4%80%e9%8c%84%20F2E%20%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92%e6%ad%b7%e7%a8%8b%20F2E%20Journey" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2fjavascript30_day04%2f&title=%e3%80%90JS30%e7%b3%bb%e5%88%97%e3%80%91Day%2004%ef%bc%9aArray%20Cardio%20Day%201 &summary=%e7%86%9f%e6%82%89%e9%99%a3%e5%88%97%e6%93%8d%e4%bd%9c%e6%96%b9%e6%b3%95%ef%bc%9afilter%28%29%e3%80%81map%28%29%e3%80%81sort%28%29%e3%80%81reduce%28%29%e3%80%81from%28%29%e3%80%81includes%28%29%e3%80%81slice%28%29&source=%e7%b4%80%e9%8c%84%20F2E%20%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92%e6%ad%b7%e7%a8%8b%20F2E%20Journey" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
           <svg data-name="linkedin" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
         </a>
       

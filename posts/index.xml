@@ -23,11 +23,11 @@
       <item>
         <title>【JS30系列】Day 04：Array Cardio Day 1</title>
         <link>https://sylvia-h.github.io/posts/2021/javascript30_day04/</link>
-        <pubDate>Wed, 27 Oct 2021 17:42:11 +0800</pubDate>
+        <pubDate>Thu, 28 Oct 2021 17:42:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
-        <atom:modified>Wed, 27 Oct 2021 17:42:11 +0800</atom:modified>
+        <atom:modified>Thu, 28 Oct 2021 17:42:11 +0800</atom:modified>
         <guid>https://sylvia-h.github.io/posts/2021/javascript30_day04/</guid>
-        <description>Wes Bos 的原始專案：JS30 Day04  Day 04 專案完成前 Day 04 專案完成後  專案目標： 熟悉陣列操作方法：filter()、map()、sort()、reduce()&amp;hellip;等等。
+        <description>Wes Bos 的原始專案：JS30 Day04  Day 04 專案完成前 Day 04 專案完成後  專案目標： 熟悉陣列操作方法：filter()、map()、sort()、reduce()、from()、includes()、slice()。
 此範例瀏覽器不會渲染出畫面，純粹用陣列操作方法來篩選出資料。
 實作成果
 資料集 題目給了兩筆資料集，以下共有 8 道題目要從以下兩個資料集中篩選出目標物件資料。
