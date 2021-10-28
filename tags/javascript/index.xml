@@ -7,26 +7,70 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Javascript on Sylvia&#39;s Babel</title>
-    <link>https://sylvia-H.github.io/tags/javascript/</link>
+    <link>https://sylvia-h.github.io/tags/javascript/</link>
     <description>Recent content in Javascript on Sylvia&#39;s Babel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>sylvie11gaia@gmail.com (Sylvia-H)</managingEditor>
     <webMaster>sylvie11gaia@gmail.com (Sylvia-H)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 21 Oct 2021 16:42:11 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 Oct 2021 17:42:11 +0800</lastBuildDate>
     
-        <atom:link href="https://sylvia-H.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://sylvia-h.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
+        <title>【JS30系列】Day 04：Array Cardio Day 1</title>
+        <link>https://sylvia-h.github.io/posts/2021/javascript30_day04/</link>
+        <pubDate>Wed, 27 Oct 2021 17:42:11 +0800</pubDate>
+        <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
+        <atom:modified>Wed, 27 Oct 2021 17:42:11 +0800</atom:modified>
+        <guid>https://sylvia-h.github.io/posts/2021/javascript30_day04/</guid>
+        <description>Wes Bos 的原始專案：JS30 Day04  Day 04 專案完成前 Day 04 專案完成後  專案目標： 熟悉陣列操作方法：filter()、map()、sort()、reduce()&amp;hellip;等等。
+此範例瀏覽器不會渲染出畫面，純粹用陣列操作方法來篩選出資料。
+實作成果
+資料集 題目給了兩筆資料集，以下共有 8 道題目要從以下兩個資料集中篩選出目標物件資料。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  const inventors = [ { first: &amp;#39;Albert&amp;#39;, last: &amp;#39;Einstein&amp;#39;, year: 1879, passed: 1955 }, { first: &amp;#39;Isaac&amp;#39;, last: &amp;#39;Newton&amp;#39;, year: 1643, passed: 1727 }, { first: &amp;#39;Galileo&amp;#39;, last: &amp;#39;Galilei&amp;#39;, year: 1564, passed: 1642 }, { first: &amp;#39;Marie&amp;#39;, last: &amp;#39;Curie&amp;#39;, year: 1867, passed: 1934 }, { first: &amp;#39;Johannes&amp;#39;, last: &amp;#39;Kepler&amp;#39;, year: 1571, passed: 1630 }, { first: &amp;#39;Nicolaus&amp;#39;, last: &amp;#39;Copernicus&amp;#39;, year: 1473, passed: 1543 }, { first: &amp;#39;Max&amp;#39;, last: &amp;#39;Planck&amp;#39;, year: 1858, passed: 1947 }, { first: &amp;#39;Katherine&amp;#39;, last: &amp;#39;Blodgett&amp;#39;, year: 1898, passed: 1979 }, { first: &amp;#39;Ada&amp;#39;, last: &amp;#39;Lovelace&amp;#39;, year: 1815, passed: 1852 }, { first: &amp;#39;Sarah E.</description>
+        
+        <dc:creator>Sylvia-H</dc:creator>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js30/js30.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>JS30</category>
+            
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>JS30 系列</category>
+            
+          
+        
+        
+          
+            
+              <category>JS30 系列學習筆記</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>【JS30系列】Day 03：CSS Variables</title>
-        <link>https://sylvia-H.github.io/posts/2021/javascript30_day03/</link>
+        <link>https://sylvia-h.github.io/posts/2021/javascript30_day03/</link>
         <pubDate>Thu, 21 Oct 2021 16:42:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
         <atom:modified>Thu, 21 Oct 2021 16:42:11 +0800</atom:modified>
-        <guid>https://sylvia-H.github.io/posts/2021/javascript30_day03/</guid>
+        <guid>https://sylvia-h.github.io/posts/2021/javascript30_day03/</guid>
         <description>Javascript 30 Day03:CSS Variables Wes Bos 的原始專案：JS30 Day03  Day 03 專案完成前 Day 03 專案完成後  專案目標： 利用控制條來調整圖片邊框粗細、邊框色彩以及模糊程度的濾鏡效果。
 我的解法： 實作成果
 1 2 3 4 5 6 7 8 9 10 11  const image = document.querySelector(&amp;#34;img&amp;#34;); function getValue(){ let spacing = document.getElementById(&amp;#34;spacing&amp;#34;).value; let blur = document.getElementById(&amp;#34;blur&amp;#34;).value; let baseColor = document.getElementById(&amp;#34;base&amp;#34;).value; image.style.border = `${spacing}px solid ${baseColor}`; image.style.filter = `blur(${blur}px)`; } document.addEventListener(&amp;#39;mousemove&amp;#39;, getValue);   我的解法比較簡單粗暴一點，主要是用 getElementById 取得元素的值，然後綁定 mousemove 事件監聽。再用 .style 和樣板字面值來修改元素的 class 屬性。
@@ -35,7 +79,7 @@ Wes Bos 的解法： Wes Bos 的解法則有意思得多。
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  :root { --base: #ffc600; --spacing: 10px; --blur: 10px; } img { padding: var(--spacing); background: var(--base); filter: blur(var(--blur)); } .</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-H.github.ioimages/posts/js30/JS30_day03.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js30/JS30_day03.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -67,18 +111,18 @@ Wes Bos 的解法： Wes Bos 的解法則有意思得多。
       
       <item>
         <title>【JS30系列】Day 02：CSS &#43; JS Clock</title>
-        <link>https://sylvia-H.github.io/posts/2021/javascript30_day02/</link>
+        <link>https://sylvia-h.github.io/posts/2021/javascript30_day02/</link>
         <pubDate>Wed, 20 Oct 2021 20:42:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
         <atom:modified>Wed, 20 Oct 2021 20:42:11 +0800</atom:modified>
-        <guid>https://sylvia-H.github.io/posts/2021/javascript30_day02/</guid>
+        <guid>https://sylvia-h.github.io/posts/2021/javascript30_day02/</guid>
         <description>Javascript 30 Day02:CSS &amp;#43; JS Clock Wes Bos 的原始專案：JS30 Day02  Day 02 專案完成前 Day 02 專案完成後  專案目標： 製作一個時、分、秒針能實時運轉的小時鐘。
 我的解法： 實作成果
 1 2 3 4 5 6 7 8 9  .hand { width: 0; height: 0; position: absolute; top: 50%; border-style: solid; border-width: 3px 15rem 3px 0; transform-origin: 100%; }   
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  const hourHand = document.querySelector(&amp;#39;.hour-hand&amp;#39;); const minHand = document.querySelector(&amp;#39;.min-hand&amp;#39;); const secondHand = document.querySelector(&amp;#39;.second-hand&amp;#39;); const hourInfo = document.</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-H.github.ioimages/posts/js30/JS30_day02.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js30/JS30_day02.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -110,11 +154,11 @@ Wes Bos 的解法： Wes Bos 的解法則有意思得多。
       
       <item>
         <title>【JS30系列】Day 01：JavaScript Drum Kit</title>
-        <link>https://sylvia-H.github.io/posts/2021/javascript30_day01/</link>
+        <link>https://sylvia-h.github.io/posts/2021/javascript30_day01/</link>
         <pubDate>Tue, 19 Oct 2021 17:42:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
         <atom:modified>Tue, 19 Oct 2021 17:42:11 +0800</atom:modified>
-        <guid>https://sylvia-H.github.io/posts/2021/javascript30_day01/</guid>
+        <guid>https://sylvia-h.github.io/posts/2021/javascript30_day01/</guid>
         <description>Javascript 30 Day01:JavaScript Drum Kit Wes Bos 的原始專案：JS30 Day01  Day 01 專案完成前 Day 01 專案完成後  專案目標：  按下與畫面上對應的鍵盤按鍵時，相應的方框會稍微放大字體 外框會發出黃色光暈 同時撥放音檔  我的解法： 實作成果
 1 2 3 4 5 6 7 8 9 10 11 12 13 14  document.addEventListener(&amp;#39;keydown&amp;#39;, pressKey); document.addEventListener(&amp;#39;keyup&amp;#39;, upKey); function pressKey(e) { keyElement = document.querySelector(`.key[data-key=&amp;#34;${e.keyCode}&amp;#34;]`); keyElement.classList.add(&amp;#39;playing&amp;#39;); audioElement = document.querySelector(`audio[data-key=&amp;#34;${e.keyCode}&amp;#34;]`); audioElement.play(); } function upKey(e) { keyElement = document.querySelector(`.key[data-key=&amp;#34;${e.keyCode}&amp;#34;]`); keyElement.classList.remove(&amp;#39;playing&amp;#39;); }   
 觀念一：鍵盤事件 KeyBoard Event KeyCode 對照表
@@ -122,7 +166,7 @@ Wes Bos 的解法： Wes Bos 的解法則有意思得多。
  鍵盤事件keypress 和 keydown、keyup 的用法與區別 比較 keydown, keypress, keyup 的差異   觀念二：data-取值  用 getAttribute() 方法取得 DOM 元素的 data- 屬性  1  &amp;lt;div id=&amp;#34;myDiv&amp;#34; data-appid=&amp;#34;123&amp;#34; data-myname=&amp;#34;Sylvia&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;   1 2 3  let dataDiv = document.</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-H.github.ioimages/posts/js30/JS30_day01.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js30/JS30_day01.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -154,11 +198,11 @@ Wes Bos 的解法： Wes Bos 的解法則有意思得多。
       
       <item>
         <title>Javascript 的參數傳遞：by reference（傳址/傳參考）、by value（傳值）和 by sharing（傳共享）</title>
-        <link>https://sylvia-H.github.io/posts/2021/1013_byvalue_reference_sharing/</link>
+        <link>https://sylvia-h.github.io/posts/2021/1013_byvalue_reference_sharing/</link>
         <pubDate>Wed, 13 Oct 2021 15:49:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
         <atom:modified>Wed, 13 Oct 2021 15:49:11 +0800</atom:modified>
-        <guid>https://sylvia-H.github.io/posts/2021/1013_byvalue_reference_sharing/</guid>
+        <guid>https://sylvia-h.github.io/posts/2021/1013_byvalue_reference_sharing/</guid>
         <description>Javascript 的參數傳遞:by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享） 從比較運算子來釐清基本觀念 在正式進入這個主題之前，我們先來複習一下 JavaScript 的基本觀念。首先是「比較運算子」：
 1 2 3  let a = 3; let b = 3; console.log(a === b);   上面這題印出的答案是甚麼呢？沒錯，是 true。
 看到這邊，你可能會想翻桌，這麼簡單的問題還要問嗎？值與型別都相同，用嚴格相等比較運算子（===），結果當然是 true 啊。
@@ -171,7 +215,7 @@ Wes Bos 的解法： Wes Bos 的解法則有意思得多。
 原因就在於 Javascript 中不同型別的變數會有不同的儲存和傳遞資料的方式，大致上可以分為 「傳值」(call/pass by value) 和 「傳址（也有譯為「傳參考」）」(call/pass by reference) 兩種。</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-H.github.ioimages/posts/js/2021-10-13/passByValue_byReference_bySharing.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js/2021-10-13/passByValue_byReference_bySharing.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -193,11 +237,11 @@ Wes Bos 的解法： Wes Bos 的解法則有意思得多。
       
       <item>
         <title>型別名詞釋義：靜態型別/動態型別/隱性型別/強型別/弱型別</title>
-        <link>https://sylvia-H.github.io/posts/2021/0919_language-type/</link>
+        <link>https://sylvia-h.github.io/posts/2021/0919_language-type/</link>
         <pubDate>Sun, 19 Sep 2021 20:13:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
         <atom:modified>Sun, 19 Sep 2021 20:13:11 +0800</atom:modified>
-        <guid>https://sylvia-H.github.io/posts/2021/0919_language-type/</guid>
+        <guid>https://sylvia-h.github.io/posts/2021/0919_language-type/</guid>
         <description>型別名詞釋義:靜態型別 動態型別 隱性型別 強型別 弱型別 在釐清 Javascript 的資料型別的過程中，一不小心踏入了這個名詞坑。
 一開始只是想釐清 Javascript 的資料型別，讀到 MDN 一篇關於 JavaScript 的資料型別與資料結構的文章，文中出現「動態型別」一詞來說明 Javascript 的特性，為了弄清楚該詞的意思，結果一腳踏入無底坑洞&amp;hellip;
 既然時間都花下去了，就來整理一下筆記吧。
@@ -218,7 +262,7 @@ C、C++、Rust、Go、Visual Basic、Swift、Obj-C、Java 和 C# 就是屬於編
 1 2 3 4 5 6 7  let x; x=&amp;#34;Hello&amp;#34;; console.</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-H.github.ioimages/posts/js/2021-09-19/type_paraphrase.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js/2021-09-19/type_paraphrase.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

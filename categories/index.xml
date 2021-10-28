@@ -7,26 +7,26 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Categories on Sylvia&#39;s Babel</title>
-    <link>https://sylvia-H.github.io/categories/</link>
+    <link>https://sylvia-h.github.io/categories/</link>
     <description>Recent content in Categories on Sylvia&#39;s Babel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>sylvie11gaia@gmail.com (Sylvia-H)</managingEditor>
     <webMaster>sylvie11gaia@gmail.com (Sylvia-H)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 21 Oct 2021 16:42:11 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 Oct 2021 17:42:11 +0800</lastBuildDate>
     
-        <atom:link href="https://sylvia-H.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://sylvia-h.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>JS30 系列</title>
-        <link>https://sylvia-H.github.io/categories/js30-%E7%B3%BB%E5%88%97/</link>
-        <pubDate>Thu, 21 Oct 2021 16:42:11 +0800</pubDate>
+        <link>https://sylvia-h.github.io/categories/js30-%E7%B3%BB%E5%88%97/</link>
+        <pubDate>Wed, 27 Oct 2021 17:42:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
         
-        <guid>https://sylvia-H.github.io/categories/js30-%E7%B3%BB%E5%88%97/</guid>
+        <guid>https://sylvia-h.github.io/categories/js30-%E7%B3%BB%E5%88%97/</guid>
         <description></description>
         
         <dc:creator>Sylvia-H</dc:creator>
@@ -40,11 +40,11 @@
       
       <item>
         <title>Javascript 基礎觀念</title>
-        <link>https://sylvia-H.github.io/categories/javascript-%E5%9F%BA%E7%A4%8E%E8%A7%80%E5%BF%B5/</link>
+        <link>https://sylvia-h.github.io/categories/javascript-%E5%9F%BA%E7%A4%8E%E8%A7%80%E5%BF%B5/</link>
         <pubDate>Wed, 13 Oct 2021 15:49:11 +0800</pubDate>
         <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
         
-        <guid>https://sylvia-H.github.io/categories/javascript-%E5%9F%BA%E7%A4%8E%E8%A7%80%E5%BF%B5/</guid>
+        <guid>https://sylvia-h.github.io/categories/javascript-%E5%9F%BA%E7%A4%8E%E8%A7%80%E5%BF%B5/</guid>
         <description></description>
         
         <dc:creator>Sylvia-H</dc:creator>

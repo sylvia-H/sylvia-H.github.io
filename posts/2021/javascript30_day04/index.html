@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Javascript 的參數傳遞：by reference（傳址/傳參考）、by value（傳值）和 by sharing（傳共享） – Sylvia&#39;s Babel</title>
+    <title>【JS30系列】Day 04：Array Cardio Day 1 – Sylvia&#39;s Babel</title>
     
 
 
@@ -657,7 +657,7 @@
     
     var baseurl = JSON.parse("\"https://sylvia-h.github.io\"");
     
-    var permalink = JSON.parse("\"https://sylvia-h.github.io/posts/2021/1013_byvalue_reference_sharing/\"");
+    var permalink = JSON.parse("\"https://sylvia-h.github.io/posts/2021/javascript30_day04/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1335,33 +1335,33 @@
 
 
     
-<meta name="description" content="Javascript 是「傳值」（call/pass by value）還是「傳址（也有譯為「傳參考」）」（call/pass by reference）？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing（傳共享）又是甚麼呢？" />
+<meta name="description" content="熟悉陣列操作方法：filter()、map()、sort()、reduce()...等等。" />
 
-<meta name="keywords" content="js,傳值,傳址,傳參考,傳共享,參數傳遞,by value,by reference,by sharing,Javascript,Sylvia-H">
+<meta name="keywords" content="JS30,filter,map,sort,reduce,Javascript,Wes Bos,Sylvia-H">
 
 
-<meta name="keywords" content="Javascript">
+<meta name="keywords" content="JS30,Javascript">
 
-<meta name="created" content="2021-10-13T15:49:11&#43;0800">
-<meta name="modified" content="2021-10-13T15:49:11&#43;0800">
-<meta property="article:published_time" content="2021-10-13T15:49:11&#43;0800">
+<meta name="created" content="2021-10-27T17:42:11&#43;0800">
+<meta name="modified" content="2021-10-27T17:42:11&#43;0800">
+<meta property="article:published_time" content="2021-10-27T17:42:11&#43;0800">
 
 <meta name="author" content="Sylvia-H">
 
 
 <meta property="og:site_name" content="Sylvia&#39;s Babel">
-<meta property="og:title" content="Javascript 的參數傳遞：by reference（傳址/傳參考）、by value（傳值）和 by sharing（傳共享）">
-<meta property="og:url" content="https://sylvia-h.github.io/posts/2021/1013_byvalue_reference_sharing/">
+<meta property="og:title" content="【JS30系列】Day 04：Array Cardio Day 1">
+<meta property="og:url" content="https://sylvia-h.github.io/posts/2021/javascript30_day04/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="Javascript 是「傳值」（call/pass by value）還是「傳址（也有譯為「傳參考」）」（call/pass by reference）？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing（傳共享）又是甚麼呢？">
+<meta property="og:description" content="熟悉陣列操作方法：filter()、map()、sort()、reduce()...等等。">
 
   
-    <meta property="og:image" content="https://sylvia-h.github.io/images/posts/js/2021-10-13/passByValue_byReference_bySharing.png">
-    <meta property="og:image:url" content="https://sylvia-h.github.io/images/posts/js/2021-10-13/passByValue_byReference_bySharing.png">
+    <meta property="og:image" content="https://sylvia-h.github.io/images/posts/js30/js30.png">
+    <meta property="og:image:url" content="https://sylvia-h.github.io/images/posts/js30/js30.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="Sylvia&#39;s Babel">
-    <meta property="twitter:title" content="Javascript 的參數傳遞：by reference（傳址/傳參考）、by value（傳值）和 by sharing（傳共享）">
-    <meta property="twitter:description" content="Javascript 是「傳值」（call/pass by value）還是「傳址（也有譯為「傳參考」）」（call/pass by reference）？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing（傳共享）又是甚麼呢？">
+    <meta property="twitter:title" content="【JS30系列】Day 04：Array Cardio Day 1">
+    <meta property="twitter:description" content="熟悉陣列操作方法：filter()、map()、sort()、reduce()...等等。">
   
 
 <meta name="generator" content="Hugo 0.86.0" />
@@ -1373,7 +1373,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://sylvia-h.github.io/posts/2021/1013_byvalue_reference_sharing/">
+<link rel="canonical" href="https://sylvia-h.github.io/posts/2021/javascript30_day04/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1387,13 +1387,13 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Javascript 的參數傳遞：by reference（傳址/傳參考）、by value（傳值）和 by sharing（傳共享）",
-    "datePublished": "2021-10-13T15:49:11+08:00",
-    "dateModified": "2021-10-13T15:49:11+08:00",
-    "url" : "https://sylvia-h.github.io/posts/2021/1013_byvalue_reference_sharing/",
-    "description": "Javascript 是「傳值」（call/pass by value）還是「傳址（也有譯為「傳參考」）」（call/pass by reference）？可說是 Javascript 的萬年爭議經典題目。究竟兩者定義為何？有甚麼差別？另外 call/pass by sharing（傳共享）又是甚麼呢？",
-    "keywords": ["Javascript"],
-    "image" : "https://sylvia-h.github.io/images/posts/js/2021-10-13/passByValue_byReference_bySharing.png",
+    "headline": "【JS30系列】Day 04：Array Cardio Day 1",
+    "datePublished": "2021-10-27T17:42:11+08:00",
+    "dateModified": "2021-10-27T17:42:11+08:00",
+    "url" : "https://sylvia-h.github.io/posts/2021/javascript30_day04/",
+    "description": "熟悉陣列操作方法：filter()、map()、sort()、reduce()...等等。",
+    "keywords": ["JS30","Javascript"],
+    "image" : "https://sylvia-h.github.io/images/posts/js30/js30.png",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://sylvia-h.github.io"
@@ -1633,7 +1633,7 @@ if (!doNotTrack) {
             
             
 
-<main class="single__main main-main">
+<main class="single__main main">
   
     <nav class="breadcrumb hide" aria-label="breadcrumbs">
   <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
@@ -1660,7 +1660,7 @@ if (!doNotTrack) {
   
   <li  class="is-active" >
     
-      <span>Javascript 的參數傳遞：by reference（傳址/傳參考）、by value（傳值）和 by sharing（傳共享）</span>
+      <span>【JS30系列】Day 04：Array Cardio Day 1</span>
     
   </li>
   
@@ -1672,14 +1672,14 @@ if (!doNotTrack) {
   <div class="single ">
     <div class="single__nojs">Please enable Javascript to view the contents</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">Javascript 的參數傳遞：by reference（傳址/傳參考）、by value（傳值）和 by sharing（傳共享）</h2>
+    <h2 class="single__title" data-ani="true">【JS30系列】Day 04：Array Cardio Day 1</h2>
     <h3 class="single__subtitle"></h3>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="創建日期">📅&nbsp;2021年10月13日 </time>
+  <time class="single__info" title="創建日期">📅&nbsp;2021年10月27日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="閱讀時長"> ☕&nbsp;4&nbsp;分鐘 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="閱讀時長"> ☕&nbsp;2&nbsp;分鐘 </span>
   
   <span class="single__info">
      &middot; 👀<span id="busuanzi_value_page_pv">...</span> 閱讀
@@ -1692,6 +1692,8 @@ if (!doNotTrack) {
   🏷️
   
 
+  <li><a href="https://sylvia-h.github.io/tags/js30/" class="single__tag" title="JS30">#JS30</a></li>
+
   <li><a href="https://sylvia-h.github.io/tags/javascript/" class="single__tag" title="Javascript">#Javascript</a></li>
 
 </ul>
@@ -1699,153 +1701,19 @@ if (!doNotTrack) {
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <figure >
-  
-  
-  
-    <img data-src="/images/posts/js/2021-10-13/passByValue_byReference_bySharing.png" alt="type paraphrase" data-caption="by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享）" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='800px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:800px;height:;"/>
-  
-
-  
-  
-    <figcaption style="text-align: center;">
-      <strong>Javascript 的參數傳遞</strong>:
-      
-      by reference (傳址/傳參考)、by value（傳值）和 by sharing（傳共享）
-      
-        
-        
-      
-    </figcaption>
-  
-</figure>
-<h2 id="從比較運算子來釐清基本觀念">從比較運算子來釐清基本觀念</h2>
-<p>在正式進入這個主題之前，我們先來複習一下 JavaScript 的基本觀念。首先是「比較運算子」：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">===</span> <span class="nx">b</span><span class="p">);</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>上面這題印出的答案是甚麼呢？沒錯，是 <code>true</code>。</p>
-<p>看到這邊，你可能會想翻桌，這麼簡單的問題還要問嗎？值與型別都相同，用嚴格相等比較運算子（===），結果當然是 <code>true</code> 啊。</p>
-<p>先壓壓怒氣，再來看看下面這題：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">c</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;a&#34;</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">];</span>
-<span class="kd">let</span> <span class="nx">d</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;a&#34;</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">c</span> <span class="o">===</span> <span class="nx">d</span><span class="p">);</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>「廢話，當然也是 <code>true</code> 啊！」</p>
-<p>你確定嗎？</p>
-<p>那麼下面這幾題呢？</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="p">[]</span> <span class="o">===</span> <span class="p">[]</span> <span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">===</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="p">{}</span> <span class="o">===</span> <span class="p">{}</span> <span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="mi">1</span><span class="p">}</span> <span class="o">===</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="mi">1</span><span class="p">}</span> <span class="p">);</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>執行以上五個判斷式的結果是什麼呢？<br />
-結果竟然全部是 <code>false</code> ！</p>
-<p>原因就在於 Javascript 中不同型別的變數會有不同的儲存和傳遞資料的方式，大致上可以分為 <strong>「傳值」(call/pass by value)</strong> 和 <strong>「傳址（也有譯為「傳參考」）」(call/pass by reference)</strong> 兩種。</p>
-<h2 id="參數的傳遞方式">參數的傳遞方式</h2>
-<p>以傳統的說法來說，若變數指派的值為<strong>基本型別（number、string、boolean、null、undefined、symbol）</strong>，那麼賦值是「<strong>傳值</strong>」。</p>
-<p>若變數指派的值為<strong>物件型別（object、array、function）</strong>，那麼賦值是「<strong>傳址</strong>」。</p>
-<table>
-<thead>
-<tr>
-<th>型別</th>
-<th>參數傳遞方式</th>
-<th>英譯</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>基本型別（number、string、boolean、null、undefined、symbol）</td>
-<td>傳值</td>
-<td>by value</td>
-</tr>
-<tr>
-<td>物件型別（object、array、function）</td>
-<td>傳址/傳參考</td>
-<td>by reference</td>
-</tr>
-</tbody>
-</table>
-<p>但為什麼說上面這個說法是「傳統說法」呢？</p>
-<p>因為也有人認為 Javascript <strong>既不是傳值也不是傳址</strong>，而是「有時看起來像傳值，有時看起來像傳址」， <strong>實際上應該說是「傳共享（pass/call by sharing）」</strong> 。</p>
-<p>但也有人認為 Javascript <strong>沒有所謂的「傳址」或「傳共享」</strong>，<strong>實際上就只有「傳值」(call/pass by value)</strong>。</p>
-<p>這眾說紛紜的狀況是怎麼回事呢？要釐清這道經典的爭議題，就讓我們先從傳統的說法來理解何謂「傳值」？何謂「傳址」？</p>
-<h3 id="何謂傳值callpass-by-value">何謂「傳值（call/pass by value）」？</h3>
-<p>對電腦來說，實際儲存和呼叫資料是以「記憶體位址」來運作，而宣告變數，就是來幫助我們以別名來與實際的資料儲存位址作連結。變數會指向記憶體位置來調用資料進行運算。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>比如說，當我們宣告一個變數 <code>a</code> ，並賦值一個資料型別為數字的值 <code>3</code> 的時候，實際上在電腦中是這樣運作的：</p>
-<figure >
-  
-  
-  
-    <img data-src="/images/posts/js/2021-10-13/byValue01.jpg" alt="byValue" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='390px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:390px;height:;"/>
-  
-
-  
-  
-</figure>
+      <h4 id="wes-bos-的原始專案js30-day04httpsgithubcomwesbosjavascript30treemaster0420-20array20cardio20day201"><a href="https://github.com/wesbos/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201">Wes Bos 的原始專案：JS30 Day04</a></h4>
+<ul>
+<li><a href="https://github.com/wesbos/JavaScript30/blob/master/04%20-%20Array%20Cardio%20Day%201/index-START.html">Day 04 專案完成前</a></li>
+<li><a href="https://github.com/wesbos/JavaScript30/blob/master/04%20-%20Array%20Cardio%20Day%201/index-FINISHED.html">Day 04 專案完成後</a></li>
+</ul>
 <br>
-<p>將 <code>3</code> 這個值儲存在 <code>0x01</code> 這個記憶體位置，然後把變數 <code>a</code> 指向這個記憶體位置。</p>
-<p>如果此時宣告一個新變數 <code>b</code>，並把變數 <code>a</code> 的值賦值給變數 <code>b</code>：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>那麼記憶體位置 <code>0x01</code> 中儲存的值 <code>3</code> 就會被複製一份到  <code>0x02</code> ，並將新變數 <code>b</code> 指向記憶體位置 <code>0x02</code>。（如下圖）</p>
-<figure >
-  
-  
-  
-    <img data-src="/images/posts/js/2021-10-13/byValue02.jpg" alt="byValue" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='582px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:582px;height:;"/>
-  
-
-  
-  
-</figure>
+<h4 id="專案目標">專案目標：</h4>
+<p>熟悉陣列操作方法：filter()、map()、sort()、reduce()&hellip;等等。<br />
+此範例瀏覽器不會渲染出畫面，純粹用陣列操作方法來篩選出資料。</p>
+<p><a href="https://sylvia-h.github.io/JavaScript30/03%20-%20CSS%20Variables/index-sylvia.html">實作成果</a></p>
 <br>
-<p>這就是所謂的「<strong>傳值</strong>」。</p>
-<p>也就是當 <strong>變數指派的值是基本型別</strong> 時，變數間做 <code>=</code> 賦值時，傳遞的是<strong>變數的值</strong>。</p>
-<p>此時，不同變數雖然值相同，但依舊是儲存在不同的記憶體位址。</p>
-<p>若這時對其中一個變數再重新賦值的話，另一個變數的值並不會因此而更動：</p>
+<h4 id="資料集">資料集</h4>
+<p>題目給了兩筆資料集，以下共有 8 道題目要從以下兩個資料集中篩選出目標物件資料。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1859,53 +1727,51 @@ if (!doNotTrack) {
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">inventors</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Albert&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Einstein&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1879</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1955</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Isaac&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Newton&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1643</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1727</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Galileo&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Galilei&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1564</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1642</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Marie&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Curie&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1867</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1934</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Johannes&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Kepler&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1571</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1630</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Nicolaus&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Copernicus&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1473</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1543</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Max&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Planck&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1858</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1947</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Katherine&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Blodgett&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1898</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1979</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Ada&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Lovelace&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1815</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1852</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Sarah E.&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Goode&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1855</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1905</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Lise&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Meitner&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1878</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1968</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">first</span><span class="o">:</span> <span class="s1">&#39;Hanna&#39;</span><span class="p">,</span> <span class="nx">last</span><span class="o">:</span> <span class="s1">&#39;Hammarström&#39;</span><span class="p">,</span> <span class="nx">year</span><span class="o">:</span> <span class="mi">1829</span><span class="p">,</span> <span class="nx">passed</span><span class="o">:</span> <span class="mi">1909</span> <span class="p">}</span>
+<span class="p">];</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">a</span> <span class="p">);</span>   <span class="c1">// 3
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">b</span> <span class="p">);</span>   <span class="c1">// 3
-</span><span class="c1"></span>
-<span class="nx">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-
-<span class="c1">// 變數 b 依然是 3，而變數 a 變成了 5
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">a</span> <span class="p">);</span>   <span class="c1">// 5
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">b</span> <span class="p">);</span>   <span class="c1">// 3
-</span></code></pre></td></tr></table>
+<span class="kr">const</span> <span class="nx">people</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">&#39;Bernhard, Sandra&#39;</span><span class="p">,</span> <span class="s1">&#39;Bethea, Erin&#39;</span><span class="p">,</span> <span class="s1">&#39;Becker, Carl&#39;</span><span class="p">,</span> <span class="s1">&#39;Bentsen, Lloyd&#39;</span><span class="p">,</span> <span class="s1">&#39;Beckett, Samuel&#39;</span><span class="p">,</span> <span class="s1">&#39;Blake, William&#39;</span><span class="p">,</span> <span class="s1">&#39;Berger, Ric&#39;</span><span class="p">,</span> <span class="s1">&#39;Beddoes, Mick&#39;</span><span class="p">,</span> <span class="s1">&#39;Beethoven, Ludwig&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Belloc, Hilaire&#39;</span><span class="p">,</span> <span class="s1">&#39;Begin, Menachem&#39;</span><span class="p">,</span> <span class="s1">&#39;Bellow, Saul&#39;</span><span class="p">,</span> <span class="s1">&#39;Benchley, Robert&#39;</span><span class="p">,</span> <span class="s1">&#39;Blair, Robert&#39;</span><span class="p">,</span> <span class="s1">&#39;Benenson, Peter&#39;</span><span class="p">,</span> <span class="s1">&#39;Benjamin, Walter&#39;</span><span class="p">,</span> <span class="s1">&#39;Berlin, Irving&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Benn, Tony&#39;</span><span class="p">,</span> <span class="s1">&#39;Benson, Leana&#39;</span><span class="p">,</span> <span class="s1">&#39;Bent, Silas&#39;</span><span class="p">,</span> <span class="s1">&#39;Berle, Milton&#39;</span><span class="p">,</span> <span class="s1">&#39;Berry, Halle&#39;</span><span class="p">,</span> <span class="s1">&#39;Biko, Steve&#39;</span><span class="p">,</span> <span class="s1">&#39;Beck, Glenn&#39;</span><span class="p">,</span> <span class="s1">&#39;Bergman, Ingmar&#39;</span><span class="p">,</span> <span class="s1">&#39;Black, Elk&#39;</span><span class="p">,</span> <span class="s1">&#39;Berio, Luciano&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Berne, Eric&#39;</span><span class="p">,</span> <span class="s1">&#39;Berra, Yogi&#39;</span><span class="p">,</span> <span class="s1">&#39;Berry, Wendell&#39;</span><span class="p">,</span> <span class="s1">&#39;Bevan, Aneurin&#39;</span><span class="p">,</span> <span class="s1">&#39;Ben-Gurion, David&#39;</span><span class="p">,</span> <span class="s1">&#39;Bevel, Ken&#39;</span><span class="p">,</span> <span class="s1">&#39;Biden, Joseph&#39;</span><span class="p">,</span> <span class="s1">&#39;Bennington, Chester&#39;</span><span class="p">,</span> <span class="s1">&#39;Bierce, Ambrose&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Billings, Josh&#39;</span><span class="p">,</span> <span class="s1">&#39;Birrell, Augustine&#39;</span><span class="p">,</span> <span class="s1">&#39;Blair, Tony&#39;</span><span class="p">,</span> <span class="s1">&#39;Beecher, Henry&#39;</span><span class="p">,</span> <span class="s1">&#39;Biondo, Frank&#39;</span>
+<span class="p">];</span>
+</code></pre></td></tr></table>
 </div>
 </div><br>
-<figure >
-  
-  
-  
-    <img data-src="/images/posts/js/2021-10-13/byValue03.jpg" alt="byValue" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='525px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:525px;height:;"/>
-  
-
-  
-  
-</figure>
 <br>
-<p>當變數的值為基本型別時，若對該變數重新賦值的話，並不是直接修改值的資料內容，而是在記憶體內部重新分配一個區塊存放新的值，變數就指向新分配的記憶體區塊，原本舊的記憶體區塊還是放著舊值，所以<strong>舊值其實是不可變動的（immutable）</strong>。有 by value 特性的資料型別大多是不可變動的（immutable）。</p>
-<h3 id="何謂傳址callpass-by-reference">何謂「傳址（call/pass by reference）」？</h3>
-<p>若變數指派的值為物件型別（object、array、function），那麼賦值就是「<strong>傳址</strong>」。</p>
-<p>這又是甚麼意思呢？</p>
-<p>因為物件型別儲存的是物件中的每個屬性（property），一個屬性包含一組「鍵」（key）和「值」（value），一組「鍵值對（Key-Value Pairs）」稱做物件的一個屬性。</p>
-<p>這組「鍵值對」儲存的方式是：儲存屬性「鍵（key）」的值 以及 儲存屬性「值（value）」的記憶體位置。（觀念來源：<a href="https://ithelp.ithome.com.tw/articles/10194299">JavaScript - 參數傳遞方式 (2)</a>）</p>
-<p>我將我對這段話的理解，繪製成下圖：</p>
-<figure >
-  
-  
-  
-    <img data-src="/images/posts/js/2021-10-13/byReference01.jpg" alt="byValue" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='859px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:859px;height:;"/>
-  
-
-  
-  
-</figure>
+<h4 id="第一題篩選出生在-1500-年代的發明家">第一題：篩選出生在 1500 年代的發明家</h4>
+<p>本題要從 <code>inventors</code> 資料集篩選出生在 1500 年代的發明家。</p>
+<div class="alert alert-success" role="alert" data-dir="ltr">filter 語法：<br />
+let newArray = arr.filter(callback(element, index, array), thisArg);</div>
+<p><code>filter()</code> 方法，會將陣列中的「每一個元素」帶入指定的函式內做判斷，透過 <code>return</code> 回傳判斷結果為 <code>true</code> 的元素，並組成新的陣列。</p>
 <br>
-<p>也就是變數 <code>obj</code> 指向的記憶體位置 <code>0x03</code> 儲存了一個物件型別的資料，該物件有兩個屬性，第一個屬性的「鍵」 <code>key0</code> 的「值」是記憶體位置 <code>0x01</code> ，而 <code>0x01</code> 儲存了一個字串型別的資料 <code>&quot;aa&quot;</code>。第二個屬性的「鍵」 <code>key1</code> 的「值」是記憶體位置 <code>0x02</code> ，而 <code>0x02</code> 儲存了一個字串型別的資料 <code>&quot;bb&quot;</code>。</p>
-<p>若此時欲將變數 <code>obj</code> 的值，賦值給變數 <code>obj2</code>：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1913,312 +1779,87 @@ if (!doNotTrack) {
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="nx">key0</span><span class="o">:</span> <span class="s2">&#34;aa&#34;</span><span class="p">,</span>
-            <span class="nx">key1</span><span class="o">:</span> <span class="s2">&#34;bb&#34;</span>
-          <span class="p">};</span>
-<span class="kd">let</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// Array.prototype.filter()
+</span><span class="c1">// 1. Filter the list of inventors for those who were born in the 1500&#39;s
+</span><span class="c1"></span>
+<span class="kd">let</span> <span class="nx">inventors_1500s</span> <span class="o">=</span> <span class="nx">inventors</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">el</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">el</span><span class="p">.</span><span class="nx">year</span><span class="o">&lt;</span><span class="mi">1600</span> <span class="o">&amp;&amp;</span> <span class="nx">el</span><span class="p">.</span><span class="nx">year</span><span class="o">&gt;</span><span class="mi">1500</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">inventors_1500s</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>電腦底層的運作方式是如何呢？</p>
-<p>剛剛處理基本型別的值，用的是傳值（call/pass by value）的方式。如果物件型別也用一樣的方法的話，那麼應該就是將記憶體位置 <code>0x03</code> 的物件型別資料複製一份到記憶體位置 <code>0x04</code>，再將變數 <code>obj2</code> 指向記憶體位置 <code>0x04</code>。</p>
-<p>可是，如果我們以這個概念來操作以下程式碼的話，就會發現狀況有點不一樣：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="nx">key0</span><span class="o">:</span> <span class="s2">&#34;aa&#34;</span><span class="p">,</span>
-            <span class="nx">key1</span><span class="o">:</span> <span class="s2">&#34;bb&#34;</span>
-          <span class="p">};</span>
-          
-<span class="c1">// 先將 obj 賦值給 obj2
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">;</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>   <span class="c1">// {key0: &#34;aa&#34;,key1: &#34;bb&#34;};
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj2</span><span class="p">);</span> <span class="c1">// {key0: &#34;aa&#34;,key1: &#34;bb&#34;};
-</span><span class="c1"></span>
-<span class="c1">// 再對 obj 物件的第一個鍵值重新賦值
-</span><span class="c1"></span><span class="nx">obj</span><span class="p">.</span><span class="nx">key0</span> <span class="o">=</span> <span class="s2">&#34;cc&#34;</span><span class="p">;</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>   <span class="c1">// {key0: &#34;cc&#34;,key1: &#34;bb&#34;};
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj2</span><span class="p">);</span> <span class="c1">// {key0: &#34;cc&#34;,key1: &#34;bb&#34;};
-</span><span class="c1"></span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="o">===</span><span class="nx">obj2</span><span class="p">);</span> <span class="c1">// true
-</span></code></pre></td></tr></table>
+</div><br>
+<br>
+<h4 id="第二題將發明家的姓氏名字組合起來回傳一個新陣列">第二題：將發明家的姓氏、名字組合起來，回傳一個新陣列</h4>
+<div class="alert alert-success" role="alert" data-dir="ltr"><p>map 語法：<br />
+let new_array = arr.map(callback(currentValue, index, array));</p>
+<p>如果要使用 this 參數，則「不能使用」箭頭函式：<br />
+let new_array = arr.map(function callback(currentValue, index, array){}, thisArg);</p>
 </div>
-</div><p>如果變數 <code>obj2</code> 指向的是記憶體位置 <code>0x04</code>，那麼第二次 <code>console.log</code> 時，印出來的結果應該會不一樣才對。但是變數 <code>obj</code> 和 變數 <code>obj2</code> 卻印出一樣的結果！</p>
-<p>也就是說，下圖用「傳值」的方式來理解物件型別的參數傳遞是<strong>錯誤的</strong>：</p>
-<figure >
-  
-  
-  
-    <img data-src="/images/posts/js/2021-10-13/byReference02.jpg" alt="byValue" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='630px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:630px;height:;"/>
-  
-
-  
-  
-</figure>
+<p><code>map()</code> 方法，會將陣列中的「每一個元素」帶入指定的函式內做判斷，透過 <code>return</code> 回傳運算後的結果，並組成新的陣列。</p>
 <br>
-<p>正確的理解是，當變數指派的值是物件型別時，變數間做 <code>=</code> 賦值時，傳遞的是變數的<strong>記憶體位址</strong>，即所謂「<strong>傳址</strong>」。</p>
-<figure >
-  
-  
-  
-    <img data-src="/images/posts/js/2021-10-13/byReference03.jpg" alt="byValue" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='680px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:680px;height:;"/>
-  
-
-  
-  
-</figure>
-<br>
-<p>這樣的話，剛剛那段程式碼的運作邏輯，就解釋得通了。</p>
-<p><code>obj.key0 = &quot;cc&quot;;</code> 是將字串 <code>&quot;cc&quot;</code> 儲存在新的記憶體位置，再將 <code>obj.key0</code> 指向新的記憶體位置，但是原先儲存整個物件資料的記憶體位置並沒有變動，由於 <code>obj</code> 和 <code>obj2</code> 儲存的是同一個記憶體位置，所以 <code>obj === obj2</code> 的結果會是 <code>true</code>。</p>
-<p>真正變動的只有<strong>屬性的值所指向的記憶體位置</strong>。</p>
-<figure >
-  
-  
-  
-    <img data-src="/images/posts/js/2021-10-13/byReference04.jpg" alt="byValue" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='637px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:637px;height:;"/>
-  
-
-  
-  
-</figure>
-<br>
-<p>這時我們再回過頭來看，一開始關於嚴格相等比較運算子（===）的那道題目，就可以理解答案是 <code>false</code> 的原因了：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">c</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;a&#34;</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">];</span>
-<span class="kd">let</span> <span class="nx">d</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;a&#34;</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">c</span> <span class="o">===</span> <span class="nx">d</span><span class="p">);</span> <span class="c1">// false
-</span></code></pre></td></tr></table>
-</div>
-</div><p>因為 變數<code>c</code> 和 變數<code>d</code> 所儲存的物件資料，其值所指向的記憶體空間並不相同，因此嚴格比對下的結果會是 <code>false</code>。</p>
-<h3 id="關於-immutable-和-mutable-的觀念">關於 immutable 和 mutable 的觀念</h3>
-<p>在上面的例子中，實際修改物件的值時，將會修改到的是物件的值所參考到的記憶體位置，可以發現舊值是可變動的（mutable)。</p>
-<p>這裡就帶出了 <strong>「不可變的（immutable）」</strong> 和 <strong>「可變的（mutable）」</strong> 的兩種觀念。</p>
-<div class="notices warning" data-title="Immutable（不可變的）">
-  <p>當變數的值為<strong>基本型別</strong>時，若要修改值，其實是在記憶體內部重新分配一個區塊存放新的值，而變數就會指向新分配的記憶體區塊，原本舊的記憶體區塊還是放著舊值，所以<strong>舊值為 immutable</strong>。</p>
-<p><strong>有 by value 特性的資料型別大多是 immutable</strong>。</p>
-
-</div>
-<br>
-<div class="notices success" data-title="Mutable（可變的）">
-  <p>Object, Array, Function, Map 和 Set 等<strong>物件型別</strong>，在實際修改物件的值時，將會修改到的是<strong>物件的值所參考到的記憶體位置</strong>，所以<strong>舊值為 mutable</strong>。</p>
-<p><strong>有 by reference 特性的型別大多是 mutable</strong>。</p>
-
-</div>
-<h3 id="關於-pass-by-sharing-的討論">關於 pass by sharing 的討論</h3>
-<p>而物件型別的「傳址」又還有一個<strong>例外情況</strong>，故又有討論認為 Javascript 的策略其實不是「傳值（call/pass by value）」，也不是「傳址（call/pass by reference）」而是「傳共享（call/pass by sharing）」。</p>
-<p>這點就見仁見智了，此處對於 Javascript 究竟是不是該歸屬於「pass by sharing」不去細究，想進一步了解的話可再從下方的參考資料中去延伸閱讀。</p>
-<p>此處只對這個<strong>例外情況</strong>稍作說明，這個例外情況是什麼呢？</p>
-<p>就是當變數的值為物件型別，變數間做 <code>=</code> 賦值時，傳遞的是變數的記憶體位址，即「<strong>傳址</strong>」，但如果此時又再對其中一個變數用 <strong>物件實字（object literal）</strong> 的方式<strong>重新賦值</strong>，或在物件中<strong>加入新的 key 屬性</strong>的話，那麼，原本指向同一個記憶體位址的兩個變數，其中重新賦值的那個變數會指向不同的記憶體位址來儲存新的值。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="nx">key0</span><span class="o">:</span> <span class="s2">&#34;aa&#34;</span><span class="p">,</span>
-            <span class="nx">key1</span><span class="o">:</span> <span class="s2">&#34;bb&#34;</span>
-          <span class="p">};</span>
-
-<span class="c1">// 將 obj 的記憶體位址，賦值「傳址」給 obj2
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">;</span>    <span class="c1">// obj 和 obj2 此時指向同一個記憶體位址
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>   <span class="c1">// {key0: &#34;aa&#34;,key1: &#34;bb&#34;};
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj2</span><span class="p">);</span> <span class="c1">// {key0: &#34;aa&#34;,key1: &#34;bb&#34;};
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// Array.prototype.map()
+</span><span class="c1">// 2. Give us an array of the inventors first and last names
 </span><span class="c1"></span>
-<span class="c1">// 以物件實字重新對 obj 賦值
-</span><span class="c1"></span><span class="nx">obj</span> <span class="o">=</span>  <span class="p">{</span> <span class="nx">key3</span><span class="o">:</span> <span class="s2">&#34;cc&#34;</span> <span class="p">};</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>   <span class="c1">// {key3: &#34;cc&#34;};
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj2</span><span class="p">);</span> <span class="c1">// {key0: &#34;aa&#34;,key1: &#34;bb&#34;};
-</span><span class="c1"></span>
-<span class="c1">// obj2 仍是 {key0: &#34;aa&#34;,key1: &#34;bb&#34;};
-</span><span class="c1">// obj 卻被指向新的記憶體位址，且不會影響的 obj2 的值
-</span></code></pre></td></tr></table>
+<span class="kd">let</span> <span class="nx">inventors_name</span> <span class="o">=</span> <span class="nx">inventors</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">el</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">el</span><span class="p">.</span><span class="nx">first</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="nx">el</span><span class="p">.</span><span class="nx">last</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">inventors_name</span><span class="p">);</span>
+</code></pre></td></tr></table>
 </div>
 </div><br>
-<figure >
-  
-  
-  
-    <img data-src="/images/posts/js/2021-10-13/bySharing01.jpg" alt="byValue" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='666px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:666px;height:;"/>
-  
-
-  
-  
-</figure>
 <br>
-<p>前一章節探討物件型別的值，有說到物件型別的舊值為「可變動的（mutable）」，但從上面這個例子來看，以物件實字重新賦值時，舊值並非「可變動的（mutable）」，而是指向新的記憶體位置，這個狀況似乎比較像基本型別「不可變動的（immmutable）」性質以及「傳值」的運作方式。</p>
-<p>是不是覺得之前說的「傳值」和「傳址」觀念有點開始崩裂了呢？</p>
-<p>再來看另外一種例外狀況，是經由第三方函式來傳遞參數。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 宣告一個物件 obj
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="nx">key0</span><span class="o">:</span> <span class="s2">&#34;aa&#34;</span><span class="p">,</span>
-            <span class="nx">key1</span><span class="o">:</span> <span class="s2">&#34;bb&#34;</span>
-          <span class="p">};</span>
-
-<span class="kd">function</span> <span class="nx">changeObj</span><span class="p">(</span><span class="nx">xyz</span><span class="p">){</span>
-	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">xyz</span><span class="p">);</span>	<span class="c1">// {key0: &#39;aa&#39;, key1: &#39;bb&#39;}
-</span><span class="c1"></span>    <span class="c1">// 對物件的第一個鍵值重新賦值
-</span><span class="c1"></span>	<span class="nx">xyz</span><span class="p">.</span><span class="nx">key0</span> <span class="o">=</span> <span class="s2">&#34;cc&#34;</span><span class="p">;</span>
-	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">xyz</span><span class="p">);</span>	<span class="c1">// {key0: &#39;cc&#39;, key1: &#39;bb&#39;}
-</span><span class="c1"></span><span class="p">}</span>
-
-<span class="c1">// 以第三方函式傳值
-</span><span class="c1"></span><span class="nx">changeObj</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
-
-<span class="c1">// obj 的第一個鍵值確實被改動了
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>	<span class="c1">// {key0: &#39;cc&#39;, key1: &#39;bb&#39;}
-</span></code></pre></td></tr></table>
-</div>
-</div><p>在上面的例子中，因為是「傳址」，所以物件 <code>obj</code> 的第一個鍵值確實被更動了。</p>
-<p>但如果用在第三方函式中以物件實字（object literal）重新賦值呢？卻變成了「傳值」的運作模式。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 宣告一個物件 obj
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="nx">key0</span><span class="o">:</span> <span class="s2">&#34;aa&#34;</span><span class="p">,</span>
-            <span class="nx">key1</span><span class="o">:</span> <span class="s2">&#34;bb&#34;</span>
-          <span class="p">};</span>
-
-<span class="kd">function</span> <span class="nx">changeObj</span><span class="p">(</span><span class="nx">xyz</span><span class="p">){</span>
-	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">xyz</span><span class="p">);</span>	<span class="c1">// {key0: &#39;aa&#39;, key1: &#39;bb&#39;}
-</span><span class="c1"></span>	<span class="nx">xyz</span> <span class="o">=</span> <span class="p">{</span><span class="nx">key2</span><span class="o">:</span><span class="s2">&#34;cc&#34;</span><span class="p">};</span>
-	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">xyz</span><span class="p">);</span>	<span class="c1">// {key2: &#39;cc&#39;}
-</span><span class="c1"></span><span class="p">}</span>
-
-<span class="c1">// 以第三方函式傳值
-</span><span class="c1"></span><span class="nx">changeObj</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
-
-<span class="c1">// 但結果 obj 的值並未更動
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>	<span class="c1">// {key0: &#39;aa&#39;, key1: &#39;bb&#39;}
-</span></code></pre></td></tr></table>
-</div>
-</div><p>在上面這個例子中，把 <code>obj</code> 傳入函式 <code>changeObj(obj);</code> 裡面，並對 <code>obj</code> 重新賦值。如果物件型別的值是「傳址」的話， <code>obj</code> 應該會被指向新的記憶體位置，且其值會變成 <code>{key2: 'cc'}</code>。</p>
-<p>但最後結果卻是 <code>obj</code> 並未被更動，仍維持舊值。</p>
-<p>這樣看來，物件型別的值在參數的傳遞上，<strong>既不是 pass by value 也不是 pass by reference</strong>。</p>
-<p>由於有這些奇怪的狀況，所以才有說法認為 Javascript 不是「傳值（by value）」，也不是「傳址（by reference）」<strong>而是「傳共享（pass by sharing）</strong>」。</p>
-<p>意思就是說，讓 function 裡面 <code>xyz</code> 跟外面的 <code>obj</code> 「共享」同一個 object，所以可以透過 function 裡面的 xyz 修改「共享到的那個 object」的資料。</p>
-<h3 id="其實-javascript-實際上就只有傳值by-value">其實 Javascript 實際上就只有「傳值(by value)」</h3>
-<p>看到這個副標，你大概會想：「很好，現在又是甚麼狀況？」</p>
-<p>會產生這些眾說紛紜的說法，原因在於大家對於 Value 和 Reference 的定義不同。</p>
-<p>我們來回頭看看剛剛解釋「by reference」所使用的圖：</p>
-<figure >
-  
-  
-  
-    <img data-src="/images/posts/js/2021-10-13/byReference03.jpg" alt="byValue" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='680px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:680px;height:;"/>
-  
-
-  
-  
-</figure>
+<h4 id="第三題">第三題：</h4>
 <br>
-<p>如果把記憶體位置 <code>0x03</code> 視作變數 <code>obj</code> 和 <code>obj2</code> 所儲存的值，那麼其實「pass by reference」也可以說是「pass by value」的一種，只是這個 value 是 reference 而已。</p>
-<p>關於這個問題的討論相當多而且複雜，以上只是我以自己所能理解的程度做的簡單整理。而對於 Javascript 究竟是「pass by sharing」還是只有「pass by value」，就留待諸君各自判斷了。</p>
+<br>
+<br>
+<h4 id="第四題">第四題：</h4>
+<br>
+<br>
+<br>
+<h4 id="第五題">第五題：</h4>
+<br>
+<br>
+<br>
+<h4 id="第六題">第六題：</h4>
+<br>
+<br>
+<br>
+<h4 id="第七題">第七題：</h4>
+<br>
+<br>
+<br>
+<h4 id="第八題">第八題：</h4>
+<br>
+<br>
 <br>
 <blockquote>
-<p>參考資料：</p>
-<ol>
-<li><a href="https://pjchender.blogspot.com/2016/03/javascriptby-referenceby-value.html">談談 JavaScript 中 by reference 和 by value 的重要觀念</a></li>
-<li><a href="https://ithelp.ithome.com.tw/articles/10191057">重新認識 JavaScript: Day 05 JavaScript 是「傳值」或「傳址」？</a></li>
-<li><a href="https://hackmd.io/@chupai/B13YRDJJB">JavaScript 的「傳值」與「傳址」</a></li>
-<li><a href="https://blog.techbridge.cc/2018/06/23/javascript-call-by-value-or-reference/">深入探討 JavaScript 中的參數傳遞：call by value 還是 reference？</a></li>
-<li><a href="https://medium.com/harry-xies-blog/%E7%90%86%E8%A7%A3-mutable-vs-immutable-%E7%89%A9%E4%BB%B6-20ed802b6283">理解 mutable VS immutable 物件</a></li>
-<li><a href="https://medium.com/itsems-frontend/javascript-pass-by-value-reference-sharing-5d6095ae030b">[JavaScript] Javascript中的傳值 by value 與傳址 by reference</a></li>
-<li><a href="https://www.slideshare.net/YiTaiLin/java-script-63031051">林儀泰：簡單介紹JavaScript參數傳遞</a></li>
-<li><a href="https://ithelp.ithome.com.tw/articles/10194109">I Want To Know JS系列 第 7 篇：JavaScript - 參數傳遞方式 (1)</a></li>
-<li><a href="https://ithelp.ithome.com.tw/articles/10194299">I Want To Know JS系列 第 8 篇：JavaScript - 參數傳遞方式 (2)</a></li>
-<li><a href="https://ithelp.ithome.com.tw/articles/10209104">你不可不知的 JavaScript 二三事#Day26：程式界的哈姆雷特 —— Pass by value, or Pass by reference？</a></li>
-<li><a href="https://ithelp.ithome.com.tw/articles/10208594">call by value 傳值 &amp; call by reference 傳址</a></li>
-</ol>
+<p>延伸閱讀：</p>
+<ul>
+<li><a href="https://ithelp.ithome.com.tw/articles/10231275">JS30 Day 4 - Array Cardio Day 學習筆記</a></li>
+<li><a href="https://www.oxxostudio.tw/articles/201908/js-array.html">JavaScript Array 陣列操作方法大全 ( 含 ES6 )</a></li>
+<li><a href="https://wcc723.github.io/javascript/2017/06/29/es6-native-array/#Array-prototype-filter">JavaScript 陣列處理方法 [filter(), find(), forEach(), map(), every(), some(), reduce()]</a></li>
+<li><a href="https://hsiangfeng.github.io/javascript/20190421/1216566123/">關於 JavaScript 陣列 20 種操作的方法</a></li>
+<li><a href="https://www.youtube.com/watch?v=_vFuDQ_6Xt8&amp;ab_channel=%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2">[六角 Youtube 視頻] JavaScript 陣列處理必學巧技</a></li>
+</ul>
 </blockquote>
+<br>
+<br>
 
     </article>
     
@@ -2418,19 +2059,19 @@ if (!doNotTrack) {
     
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2f1013_byvalue_reference_sharing%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2fjavascript30_day04%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=Javascript%20%e7%9a%84%e5%8f%83%e6%95%b8%e5%82%b3%e9%81%9e%ef%bc%9aby%20reference%ef%bc%88%e5%82%b3%e5%9d%80%2f%e5%82%b3%e5%8f%83%e8%80%83%ef%bc%89%e3%80%81by%20value%ef%bc%88%e5%82%b3%e5%80%bc%ef%bc%89%e5%92%8c%20by%20sharing%ef%bc%88%e5%82%b3%e5%85%b1%e4%ba%ab%ef%bc%89&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2f1013_byvalue_reference_sharing%2f&hashtags=Javascript&via=" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=%e3%80%90JS30%e7%b3%bb%e5%88%97%e3%80%91Day%2004%ef%bc%9aArray%20Cardio%20Day%201&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2fjavascript30_day04%2f&hashtags=JS30%2cJavascript&via=" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
     
       
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2f1013_byvalue_reference_sharing%2f&title=Javascript%20%e7%9a%84%e5%8f%83%e6%95%b8%e5%82%b3%e9%81%9e%ef%bc%9aby%20reference%ef%bc%88%e5%82%b3%e5%9d%80%2f%e5%82%b3%e5%8f%83%e8%80%83%ef%bc%89%e3%80%81by%20value%ef%bc%88%e5%82%b3%e5%80%bc%ef%bc%89%e5%92%8c%20by%20sharing%ef%bc%88%e5%82%b3%e5%85%b1%e4%ba%ab%ef%bc%89 &summary=Javascript%20%e6%98%af%e3%80%8c%e5%82%b3%e5%80%bc%e3%80%8d%ef%bc%88call%2fpass%20by%20value%ef%bc%89%e9%82%84%e6%98%af%e3%80%8c%e5%82%b3%e5%9d%80%ef%bc%88%e4%b9%9f%e6%9c%89%e8%ad%af%e7%82%ba%e3%80%8c%e5%82%b3%e5%8f%83%e8%80%83%e3%80%8d%ef%bc%89%e3%80%8d%ef%bc%88call%2fpass%20by%20reference%ef%bc%89%ef%bc%9f%e5%8f%af%e8%aa%aa%e6%98%af%20Javascript%20%e7%9a%84%e8%90%ac%e5%b9%b4%e7%88%ad%e8%ad%b0%e7%b6%93%e5%85%b8%e9%a1%8c%e7%9b%ae%e3%80%82%e7%a9%b6%e7%ab%9f%e5%85%a9%e8%80%85%e5%ae%9a%e7%be%a9%e7%82%ba%e4%bd%95%ef%bc%9f%e6%9c%89%e7%94%9a%e9%ba%bc%e5%b7%ae%e5%88%a5%ef%bc%9f%e5%8f%a6%e5%a4%96%20call%2fpass%20by%20sharing%ef%bc%88%e5%82%b3%e5%85%b1%e4%ba%ab%ef%bc%89%e5%8f%88%e6%98%af%e7%94%9a%e9%ba%bc%e5%91%a2%ef%bc%9f&source=%e7%b4%80%e9%8c%84%20F2E%20%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92%e6%ad%b7%e7%a8%8b%20F2E%20Journey" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2fjavascript30_day04%2f&title=%e3%80%90JS30%e7%b3%bb%e5%88%97%e3%80%91Day%2004%ef%bc%9aArray%20Cardio%20Day%201 &summary=%e7%86%9f%e6%82%89%e9%99%a3%e5%88%97%e6%93%8d%e4%bd%9c%e6%96%b9%e6%b3%95%ef%bc%9afilter%28%29%e3%80%81map%28%29%e3%80%81sort%28%29%e3%80%81reduce%28%29...%e7%ad%89%e7%ad%89%e3%80%82&source=%e7%b4%80%e9%8c%84%20F2E%20%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92%e6%ad%b7%e7%a8%8b%20F2E%20Journey" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
           <svg data-name="linkedin" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
         </a>
       
@@ -2577,6 +2218,22 @@ if (!doNotTrack) {
     <ul class="related-ul">
         
         <li>
+          <a href="/posts/2021/javascript30_day03/" class="related__link">【JS30系列】Day 03：CSS Variables</a>
+        </li>
+        
+        <li>
+          <a href="/posts/2021/javascript30_day02/" class="related__link">【JS30系列】Day 02：CSS &#43; JS Clock</a>
+        </li>
+        
+        <li>
+          <a href="/posts/2021/javascript30_day01/" class="related__link">【JS30系列】Day 01：JavaScript Drum Kit</a>
+        </li>
+        
+        <li>
+          <a href="/posts/2021/1013_byvalue_reference_sharing/" class="related__link">Javascript 的參數傳遞：by reference（傳址/傳參考）、by value（傳值）和 by sharing（傳共享）</a>
+        </li>
+        
+        <li>
           <a href="/posts/2021/0919_language-type/" class="related__link">型別名詞釋義：靜態型別/動態型別/隱性型別/強型別/弱型別</a>
         </li>
         
@@ -2587,21 +2244,14 @@ if (!doNotTrack) {
 <nav class="pagination-single">
   
     
-      <a href="https://sylvia-h.github.io/posts/2021/0919_language-type/" class="pagination-single__left">
+      <a href="https://sylvia-h.github.io/posts/2021/javascript30_day03/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">型別名詞釋義：靜態型別/動態型別/隱性型別/強型別/弱型別</div>      
+        <div class="pagination-single__left-title">【JS30系列】Day 03：CSS Variables</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://sylvia-h.github.io/posts/2021/javascript30_day01/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">【JS30系列】Day 01：JavaScript Drum Kit</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2960,43 +2610,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 
-<aside class="single__side main-side">
-  
-
-
-<section class="sidebar hide">
-  <script>document.querySelector('.sidebar').classList.remove('hide')</script>
-  <div class="toc__flexbox" data-position="fixed">
-    <h6 class="toc__title" data-ani="true">目錄</h6>
-    
-      <label class="switch" data-ani="true">
-        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
-        <span class="slider round"></span>
-      </label>
-    
-  </div>
-  <div class="toc " data-dir="ltr" data-folding="false" data-ani="true">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#從比較運算子來釐清基本觀念">從比較運算子來釐清基本觀念</a></li>
-    <li><a href="#參數的傳遞方式">參數的傳遞方式</a>
-      <ul>
-        <li><a href="#何謂傳值callpass-by-value">何謂「傳值（call/pass by value）」？</a></li>
-        <li><a href="#何謂傳址callpass-by-reference">何謂「傳址（call/pass by reference）」？</a></li>
-        <li><a href="#關於-immutable-和-mutable-的觀念">關於 immutable 和 mutable 的觀念</a></li>
-        <li><a href="#關於-pass-by-sharing-的討論">關於 pass by sharing 的討論</a></li>
-        <li><a href="#其實-javascript-實際上就只有傳值by-value">其實 Javascript 實際上就只有「傳值(by value)」</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</section>
-
-
-
-</aside>
-
 
 <div class="disqus markdown">
   <div id="disqus_thread"></div>
@@ -3024,7 +2637,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
   
 
-  var enableToc = JSON.parse("true");
+  var enableToc = JSON.parse("false");
   var toc = JSON.parse("null");
   var tocPosition = JSON.parse("\"inner\"");
   
@@ -3175,7 +2788,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     
-    var enableToc = JSON.parse("true");
+    var enableToc = JSON.parse("false");
     var toc = JSON.parse("null");
     var hideToc = JSON.parse("false");
     var tocFlexbox = document.querySelector('.toc__flexbox');
