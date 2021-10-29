@@ -14,7 +14,7 @@
     <managingEditor>sylvie11gaia@gmail.com (Sylvia-H)</managingEditor>
     <webMaster>sylvie11gaia@gmail.com (Sylvia-H)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 28 Oct 2021 21:42:11 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Oct 2021 18:16:00 +0800</lastBuildDate>
     
         <atom:link href="https://sylvia-h.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,54 @@
         
       
 
+      
+      <item>
+        <title>【JS30系列】Day 05：Flex Panels Gallery</title>
+        <link>https://sylvia-h.github.io/posts/2021/javascript30_day05/</link>
+        <pubDate>Fri, 29 Oct 2021 18:16:00 +0800</pubDate>
+        <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
+        <atom:modified>Fri, 29 Oct 2021 18:16:00 +0800</atom:modified>
+        <guid>https://sylvia-h.github.io/posts/2021/javascript30_day05/</guid>
+        <description>Javascript 30 Day05:Flex Panels Gallery Wes Bos 的原始專案：JS30 Day05  Wes Bos 教學影片 Day 05 Day 05 專案完成前 Day 05 專案完成後  專案目標： 運用 flex 以及綁定 click 和 transitionend 監聽事件來呈現畫廊效果。
+點擊後相應的圖片與字體會放大，再次點擊則回復原狀。
+實作成果
+步驟一：CSS 添加 flex 等等屬性 在正式寫 js 之前，首先先對 CSS 做一些修改。
+由於一開始的專案畫面，五張圖片是平行呈現，為了呈現最終畫面的效果，首先在 .panels 增加 flex 屬性。
+1 2 3 4  .panels { /* 以下為新增屬性 */ display: flex; }   接下來針對 .panels 類別底下的 .panel類別。因為要平均分配每張圖片的呈現空間，所以添加 flex: 1;。
+.panel 類別底下的三個 &amp;lt;p&amp;gt; 段落需要由上而下平行呈現，所以添加了 flex-direction: column;。
+.panel &amp;gt; * 類別也做出相應調整。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  .panel { /* 以下為新增屬性 */ flex: 1; display: flex; flex-direction: column; } .</description>
+        
+        <dc:creator>Sylvia-H</dc:creator>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js30/js30.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>JS30</category>
+            
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>JS30 系列</category>
+            
+          
+        
+        
+          
+            
+              <category>JS30 系列學習筆記</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>【JS30系列】Day 04：Array Cardio Day 1</title>
@@ -100,7 +148,7 @@ Wes Bos 的解法： Wes Bos 的解法則有意思得多。
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  :root { --base: #ffc600; --spacing: 10px; --blur: 10px; } img { padding: var(--spacing); background: var(--base); filter: blur(var(--blur)); } .</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-h.github.ioimages/posts/js30/JS30_day03.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js30/js30.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -143,7 +191,7 @@ Wes Bos 的解法： Wes Bos 的解法則有意思得多。
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  const hourHand = document.querySelector(&amp;#39;.hour-hand&amp;#39;); const minHand = document.querySelector(&amp;#39;.min-hand&amp;#39;); const secondHand = document.</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-h.github.ioimages/posts/js30/JS30_day02.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js30/js30.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -187,7 +235,7 @@ Wes Bos 的解法： Wes Bos 的解法則有意思得多。
  鍵盤事件keypress 和 keydown、keyup 的用法與區別 比較 keydown, keypress, keyup 的差異   觀念二：data-取值  用 getAttribute() 方法取得 DOM 元素的 data- 屬性  1  &amp;lt;div id=&amp;#34;myDiv&amp;#34; data-appid=&amp;#34;123&amp;#34; data-myname=&amp;#34;Sylvia&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;   1 2 3  let dataDiv = document.</description>
         
         <dc:creator>Sylvia-H</dc:creator>
-        <media:content url="https://sylvia-h.github.ioimages/posts/js30/JS30_day01.gif" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js30/js30.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
