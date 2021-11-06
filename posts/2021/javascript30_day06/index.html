@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>【釋疑筆記】indexOf() 和 lastIndexOf() 的差別 – Sylvia&#39;s Babel</title>
+    <title>【JS30系列】Day 06：Type Ahead – Sylvia&#39;s Babel</title>
     
 
 
@@ -657,7 +657,7 @@
     
     var baseurl = JSON.parse("\"https://sylvia-h.github.io\"");
     
-    var permalink = JSON.parse("\"https://sylvia-h.github.io/posts/2021/1106_indexof_lastindexof/\"");
+    var permalink = JSON.parse("\"https://sylvia-h.github.io/posts/2021/javascript30_day06/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1335,33 +1335,33 @@
 
 
     
-<meta name="description" content="indexOf() 和 lastIndexOf() 的差別在哪裡？其中的參數所代表的意義為何？看 MDN 的解釋還是覺得有點模糊不清，所以把自己的理解重新整理成一份筆記。" />
+<meta name="description" content="呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。" />
 
-<meta name="keywords" content="js,indexOf,lastIndexOf,差別,Javascript,Sylvia-H">
+<meta name="keywords" content="JS30,搜尋字串,XMLHttpRequest,fetch,RegExp,filter,match,replace,join,toLocaleString,json,api,事件監聽,Javascript,Wes Bos,Sylvia-H">
 
 
-<meta name="keywords" content="Javascript">
+<meta name="keywords" content="JS30,Javascript">
 
-<meta name="created" content="2021-11-06T19:35:00&#43;0800">
-<meta name="modified" content="2021-11-06T19:35:00&#43;0800">
-<meta property="article:published_time" content="2021-11-06T19:35:00&#43;0800">
+<meta name="created" content="2021-11-06T22:48:00&#43;0800">
+<meta name="modified" content="2021-11-06T22:48:00&#43;0800">
+<meta property="article:published_time" content="2021-11-06T22:48:00&#43;0800">
 
 <meta name="author" content="Sylvia-H">
 
 
 <meta property="og:site_name" content="Sylvia&#39;s Babel">
-<meta property="og:title" content="【釋疑筆記】indexOf() 和 lastIndexOf() 的差別">
-<meta property="og:url" content="https://sylvia-h.github.io/posts/2021/1106_indexof_lastindexof/">
+<meta property="og:title" content="【JS30系列】Day 06：Type Ahead">
+<meta property="og:url" content="https://sylvia-h.github.io/posts/2021/javascript30_day06/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="indexOf() 和 lastIndexOf() 的差別在哪裡？其中的參數所代表的意義為何？看 MDN 的解釋還是覺得有點模糊不清，所以把自己的理解重新整理成一份筆記。">
+<meta property="og:description" content="呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。">
 
   
-    <meta property="og:image" content="https://sylvia-h.github.io/images/posts/js/js.png">
-    <meta property="og:image:url" content="https://sylvia-h.github.io/images/posts/js/js.png">
+    <meta property="og:image" content="https://sylvia-h.github.io/images/posts/js30/js30.png">
+    <meta property="og:image:url" content="https://sylvia-h.github.io/images/posts/js30/js30.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="Sylvia&#39;s Babel">
-    <meta property="twitter:title" content="【釋疑筆記】indexOf() 和 lastIndexOf() 的差別">
-    <meta property="twitter:description" content="indexOf() 和 lastIndexOf() 的差別在哪裡？其中的參數所代表的意義為何？看 MDN 的解釋還是覺得有點模糊不清，所以把自己的理解重新整理成一份筆記。">
+    <meta property="twitter:title" content="【JS30系列】Day 06：Type Ahead">
+    <meta property="twitter:description" content="呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。">
   
 
 <meta name="generator" content="Hugo 0.86.0" />
@@ -1373,7 +1373,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://sylvia-h.github.io/posts/2021/1106_indexof_lastindexof/">
+<link rel="canonical" href="https://sylvia-h.github.io/posts/2021/javascript30_day06/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1387,13 +1387,13 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "【釋疑筆記】indexOf() 和 lastIndexOf() 的差別",
-    "datePublished": "2021-11-06T19:35:00+08:00",
-    "dateModified": "2021-11-06T19:35:00+08:00",
-    "url" : "https://sylvia-h.github.io/posts/2021/1106_indexof_lastindexof/",
-    "description": "indexOf() 和 lastIndexOf() 的差別在哪裡？其中的參數所代表的意義為何？看 MDN 的解釋還是覺得有點模糊不清，所以把自己的理解重新整理成一份筆記。",
-    "keywords": ["Javascript"],
-    "image" : "https://sylvia-h.github.io/images/posts/js/js.png",
+    "headline": "【JS30系列】Day 06：Type Ahead",
+    "datePublished": "2021-11-06T22:48:00+08:00",
+    "dateModified": "2021-11-06T22:48:00+08:00",
+    "url" : "https://sylvia-h.github.io/posts/2021/javascript30_day06/",
+    "description": "呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。",
+    "keywords": ["JS30","Javascript"],
+    "image" : "https://sylvia-h.github.io/images/posts/js30/js30.png",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://sylvia-h.github.io"
@@ -1660,7 +1660,7 @@ if (!doNotTrack) {
   
   <li  class="is-active" >
     
-      <span>【釋疑筆記】indexOf() 和 lastIndexOf() 的差別</span>
+      <span>【JS30系列】Day 06：Type Ahead</span>
     
   </li>
   
@@ -1672,14 +1672,14 @@ if (!doNotTrack) {
   <div class="single ">
     <div class="single__nojs">Please enable Javascript to view the contents</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">【釋疑筆記】indexOf() 和 lastIndexOf() 的差別</h2>
+    <h2 class="single__title" data-ani="true">【JS30系列】Day 06：Type Ahead</h2>
     <h3 class="single__subtitle"></h3>
     <div class="single__meta">
       
 <div class="single__infos">
   <time class="single__info" title="創建日期">📅&nbsp;2021年11月06日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="閱讀時長"> ☕&nbsp;1&nbsp;分鐘 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="閱讀時長"> ☕&nbsp;2&nbsp;分鐘 </span>
   
   <span class="single__info">
      &middot; 👀<span id="busuanzi_value_page_pv">...</span> 閱讀
@@ -1692,6 +1692,8 @@ if (!doNotTrack) {
   🏷️
   
 
+  <li><a href="https://sylvia-h.github.io/tags/js30/" class="single__tag" title="JS30">#JS30</a></li>
+
   <li><a href="https://sylvia-h.github.io/tags/javascript/" class="single__tag" title="Javascript">#Javascript</a></li>
 
 </ul>
@@ -1699,17 +1701,80 @@ if (!doNotTrack) {
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <p>indexOf() 和 lastIndexOf() 的差別在哪裡？其中參數所代表的意義為何？</p>
-<p>本來以為查了 MDN 就能明白，結果越看越不懂，動手用 <code>console.log</code> 試了幾遍才終於理解。於是把自己的理解重新整理成下面的筆記。</p>
-<h4 id="indexof-語法與參數涵義">indexOf 語法與參數涵義</h4>
-<div class="alert alert-success" role="alert" data-dir="ltr">arr.indexOf(searchElement[, fromIndex])</div>
-<p>indexOf(尋找某元素, 從哪裡開始找到最後) = 第一個找到的索引值<br />
-第二個參數選填，預設值為 0。</p>
-<h4 id="lastindexof-語法與參數涵義">lastIndexOf 語法與參數涵義</h4>
-<div class="alert alert-success" role="alert" data-dir="ltr">arr.lastIndexOf(searchElement[, fromIndex])</div>
-<p>lastIndexOf(尋找某元素, 從 0 開始找到哪裡) = 最後一個找到的索引值<br />
-第二個參數選填，預設值為陣列長度減一（arr.length - 1）。</p>
-<h4 id="範例">範例</h4>
+      <figure >
+  
+  
+  
+    <img data-src="/images/posts/js30/JS30_day06.gif" alt="Type Ahead" data-caption="Type Ahead" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='800px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:800px;height:;"/>
+  
+
+  
+  
+    <figcaption style="text-align: center;">
+      <strong>Javascript 30 Day06</strong>:
+      
+      Type Ahead
+      
+        
+        
+      
+    </figcaption>
+  
+</figure>
+<h4 id="wes-bos-的原始專案js30-day06httpsgithubcomwesbosjavascript30treemaster0620-20type20ahead"><a href="https://github.com/wesbos/JavaScript30/tree/master/06%20-%20Type%20Ahead">Wes Bos 的原始專案：JS30 Day06</a></h4>
+<ul>
+<li><a href="https://courses.wesbos.com/account/access/616d450141ee9b1bad8dd088/view/194130156">Wes Bos 教學影片 Day 06</a></li>
+<li><a href="https://github.com/wesbos/JavaScript30/blob/master/06%20-%20Type%20Ahead/index-START.html">Day 06 專案完成前</a></li>
+<li><a href="https://github.com/wesbos/JavaScript30/blob/master/06%20-%20Type%20Ahead/index-FINISHED.html">Day 06 專案完成後</a></li>
+</ul>
+<h4 id="專案目標">專案目標：</h4>
+<ol>
+<li>呼叫 API 獲取 JSON 資料集</li>
+<li>建立搜尋字串的功能，該功能要過濾出符合搜尋字串的城市名或州名</li>
+<li>在畫面上印出搜尋結果以及該城市的人口數</li>
+<li>在城市名或州名中用黃色標出搜尋字串</li>
+</ol>
+<br>
+<p><a href="https://sylvia-h.github.io/JavaScript30/06%20-%20Type%20Ahead/index-sylvia.html">實作成果</a></p>
+<h3 id="步驟一呼叫-api-獲取-json-資料集">步驟一：呼叫 API 獲取 JSON 資料集</h3>
+<p>第一步驟要先呼叫 API 獲取 JSON 資料集。<br />
+這個部分我想練習不同於 Wes Bos 的方式，所以使用了 <code>XMLHttpRequest()</code> 來獲取資料。</p>
+<h4 id="我的解法">我的解法</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">endpoint</span> <span class="o">=</span> <span class="s1">&#39;https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json&#39;</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">let</span> <span class="nx">request</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="nx">endpoint</span><span class="p">);</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">responseType</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span><span class="p">;</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">response</span><span class="p">;</span>
+    <span class="nx">result</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">el</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="nx">data</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">el</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="wes-bos-的解法">Wes Bos 的解法</h4>
+<p>Wes Bos 的寫法簡潔的多，就是用 <code>fetch</code>。寫法也很類似 axios 套件的寫法。<br />
+但原生 JavaScript 的 <code>fetch</code> 缺點很多，例如不支援逾時、進度處理等等。不過在這個範例中是沒有影響的。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1718,27 +1783,148 @@ if (!doNotTrack) {
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">endpoint</span> <span class="o">=</span> <span class="s1">&#39;https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json&#39;</span><span class="p">;</span>
 
-<span class="nx">arr</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span>	<span class="c1">// 6
-</span><span class="c1"></span><span class="nx">arr</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>	<span class="c1">// 3
-</span><span class="c1"></span>
-<span class="nx">arr</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span>	<span class="c1">// 3
-</span><span class="c1"></span><span class="nx">arr</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>	<span class="c1">// 1
-</span></code></pre></td></tr></table>
+<span class="kr">const</span> <span class="nx">cities</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">fetch</span><span class="p">(</span><span class="nx">endpoint</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">blob</span> <span class="p">=&gt;</span> <span class="nx">blob</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">cities</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">data</span><span class="p">));</span>
+</code></pre></td></tr></table>
 </div>
-</div><h4 id="結論">結論</h4>
-<p><code>lastIndexOf (a, b)</code> 會從 0 一直找到陣列的 b位置，回傳最後一個被找到的索引值。找不到的話，回傳 <code>-1</code>。<br />
-<code>indexOf (a, b)</code> 會從陣列b位置開始找到陣列最後，回傳第一個被找到的索引值。找不到的話，回傳 <code>-1</code>。</p>
+</div><br>
 <br>
+<h3 id="步驟二建立搜尋字串的功能該功能要過濾出符合搜尋字串的城市名或州名">步驟二：建立搜尋字串的功能，該功能要過濾出符合搜尋字串的城市名或州名</h3>
+<p>第二步驟主要會用到三個觀念：</p>
+<ol>
+<li>正則表達式</li>
+<li><code>filter()</code> 過濾出陣列中符合條件的元素</li>
+<li><code>match(regexp)</code> 回傳符合正則表達式的元素</li>
+</ol>
+<h4 id="我的解法-1">我的解法</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">searchWord</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.search&#39;</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">findMatch</span><span class="p">(){</span>
+  <span class="kr">const</span> <span class="nx">regExp</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="nx">searchWord</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span><span class="s1">&#39;gi&#39;</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">data</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">el</span><span class="p">=&gt;</span><span class="nx">el</span><span class="p">.</span><span class="nx">city</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">regExp</span><span class="p">)</span> <span class="o">||</span> <span class="nx">el</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">regExp</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><br>
+<br>
+<h3 id="步驟三在畫面上印出搜尋結果以及該城市的人口數">步驟三：在畫面上印出搜尋結果以及該城市的人口數</h3>
+<ol>
+<li>搜尋區綁定 <code>keyup</code> 事件監聽</li>
+<li>把 <code>findMatch()</code> 搜尋結果賦予到變數 <code>cacheData</code></li>
+<li>使用 <code>map()</code> + <code>join()</code> 把搜尋結果重組成 HTML 字串樣板</li>
+<li>人口數（population）使用 <code>toLocaleString()</code> 來呈現樣式，千位數的地方會用 <code>,</code> 標示</li>
+<li>使用 <code>innerHTML</code> 把組好的 HTML 內容賦予上去，即可在畫面上渲染出搜尋結果</li>
+</ol>
+<h4 id="我的解法-2">我的解法</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">render</span><span class="p">(){</span>
+  <span class="kr">const</span> <span class="nx">cacheData</span> <span class="o">=</span> <span class="nx">findMatch</span><span class="p">();</span>
+  <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="nx">cacheData</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">el</span><span class="p">=&gt;</span><span class="sb">`&lt;li&gt;
+</span><span class="sb">      &lt;span class=&#34;name&#34;&gt;</span><span class="si">${</span><span class="nx">el</span><span class="p">.</span><span class="nx">city</span><span class="si">}</span><span class="sb">, </span><span class="si">${</span><span class="nx">el</span><span class="p">.</span><span class="nx">state</span><span class="si">}</span><span class="sb">&lt;/span&gt;
+</span><span class="sb">      &lt;span class=&#34;population&#34;&gt;</span><span class="si">${</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">el</span><span class="p">.</span><span class="nx">population</span><span class="p">).</span><span class="nx">toLocaleString</span><span class="p">()</span><span class="si">}</span><span class="sb">&lt;/span&gt;
+</span><span class="sb">    &lt;/li&gt;`</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+  <span class="nx">result</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">str</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">searchWord</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="nx">render</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="wes-bos-的解法-1">Wes Bos 的解法</h4>
+<p>我的解法和 Wes Bos 最大的差異是 Wes Bos 建立了 <code>numberWithCommas()</code> 這個函式來為城市人口數（population）在千位數的地方用 <code>,</code> 標示。</p>
+<p>但我對正則表達式還很苦手，暫時無法理解 Wes Bos 的寫法，所以這裡就改成用可以達到一樣效果的 <code>toLocaleString()</code> 來取代。</p>
+<p>這個方法也是我從 <a href="https://youtu.be/_TbG2iuN9kM"> | [ Alex 宅幹嘛 ] 👨‍💻 深入淺出 Javascript30 快速導覽：Day 6：Type Ahead</a> 這個 Youtube 視頻中學習來的，有興趣的話可以看看 （可以從 55:35 開始看）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">numberWithCommas</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">x</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\B(?=(\d{3})+(?!\d))/g</span><span class="p">,</span> <span class="s1">&#39;,&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><br>
+<br>
+<h3 id="步驟四在城市名或州名中用黃色標出搜尋字串">步驟四：在城市名或州名中用黃色標出搜尋字串</h3>
+<p>在步驟三的基礎上，使用 <code>replace()</code> 方法把符合搜尋結果的字串用 <code>&lt;span class=&quot;hl&quot;&gt;${this.value}&lt;/span&gt;</code> 替代掉。<br />
+使之加上 <code>hl</code> 屬性，文字得以黃色背景呈現。</p>
+<h4 id="我的解法-3">我的解法</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">render</span><span class="p">(){</span>
+  <span class="kr">const</span> <span class="nx">cacheData</span> <span class="o">=</span> <span class="nx">findMatch</span><span class="p">();</span>
+  <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="nx">cacheData</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">el</span><span class="p">=&gt;{</span>
+    <span class="kr">const</span> <span class="nx">regExp</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span><span class="s1">&#39;gi&#39;</span><span class="p">);</span>
+    <span class="kr">const</span> <span class="nx">cityName</span> <span class="o">=</span> <span class="nx">el</span><span class="p">.</span><span class="nx">city</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">regExp</span><span class="p">,</span><span class="sb">`&lt;span class=&#34;hl&#34;&gt;</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="si">}</span><span class="sb">&lt;/span&gt;`</span><span class="p">);</span>
+    <span class="kr">const</span> <span class="nx">stateName</span> <span class="o">=</span> <span class="nx">el</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">regExp</span><span class="p">,</span><span class="sb">`&lt;span class=&#34;hl&#34;&gt;</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="si">}</span><span class="sb">&lt;/span&gt;`</span><span class="p">);</span>
+    <span class="k">return</span> <span class="sb">`
+</span><span class="sb">    &lt;li&gt;
+</span><span class="sb">      &lt;span class=&#34;name&#34;&gt;</span><span class="si">${</span><span class="nx">cityName</span><span class="si">}</span><span class="sb">, </span><span class="si">${</span><span class="nx">stateName</span><span class="si">}</span><span class="sb">&lt;/span&gt;
+</span><span class="sb">      &lt;span class=&#34;population&#34;&gt;</span><span class="si">${</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">el</span><span class="p">.</span><span class="nx">population</span><span class="p">).</span><span class="nx">toLocaleString</span><span class="p">()</span><span class="si">}</span><span class="sb">&lt;/span&gt;
+</span><span class="sb">    &lt;/li&gt;`</span>
+  <span class="p">}).</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+  <span class="nx">result</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">str</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">searchWord</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="nx">render</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><br>
 <blockquote>
 <p>延伸閱讀：</p>
 <ul>
-<li><a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf">MDN | Array.prototype.indexOf()</a></li>
-<li><a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf">MDN | Array.prototype.lastIndexOf()</a></li>
+<li><a href="https://developer.mozilla.org/zh-TW/docs/Learn/JavaScript/Objects/JSON">MDN | 使用 JSON 資料</a></li>
+<li><a href="https://www.oxxostudio.tw/articles/201908/js-fetch.html">JavaScript Fetch API 使用教學</a></li>
+<li><a href="https://youtu.be/_TbG2iuN9kM">Youtube 視頻 | [ Alex 宅幹嘛 ] 👨‍💻 深入淺出 Javascript30 快速導覽：Day 6：Type Ahead</a></li>
 </ul>
 </blockquote>
 <br>
@@ -1942,19 +2128,19 @@ if (!doNotTrack) {
     
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2f1106_indexof_lastindexof%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2fjavascript30_day06%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=%e3%80%90%e9%87%8b%e7%96%91%e7%ad%86%e8%a8%98%e3%80%91indexOf%28%29%20%e5%92%8c%20lastIndexOf%28%29%20%e7%9a%84%e5%b7%ae%e5%88%a5&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2f1106_indexof_lastindexof%2f&hashtags=Javascript&via=" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=%e3%80%90JS30%e7%b3%bb%e5%88%97%e3%80%91Day%2006%ef%bc%9aType%20Ahead&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2fjavascript30_day06%2f&hashtags=JS30%2cJavascript&via=" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
     
       
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2f1106_indexof_lastindexof%2f&title=%e3%80%90%e9%87%8b%e7%96%91%e7%ad%86%e8%a8%98%e3%80%91indexOf%28%29%20%e5%92%8c%20lastIndexOf%28%29%20%e7%9a%84%e5%b7%ae%e5%88%a5 &summary=indexOf%28%29%20%e5%92%8c%20lastIndexOf%28%29%20%e7%9a%84%e5%b7%ae%e5%88%a5%e5%9c%a8%e5%93%aa%e8%a3%a1%ef%bc%9f%e5%85%b6%e4%b8%ad%e7%9a%84%e5%8f%83%e6%95%b8%e6%89%80%e4%bb%a3%e8%a1%a8%e7%9a%84%e6%84%8f%e7%be%a9%e7%82%ba%e4%bd%95%ef%bc%9f%e7%9c%8b%20MDN%20%e7%9a%84%e8%a7%a3%e9%87%8b%e9%82%84%e6%98%af%e8%a6%ba%e5%be%97%e6%9c%89%e9%bb%9e%e6%a8%a1%e7%b3%8a%e4%b8%8d%e6%b8%85%ef%bc%8c%e6%89%80%e4%bb%a5%e6%8a%8a%e8%87%aa%e5%b7%b1%e7%9a%84%e7%90%86%e8%a7%a3%e9%87%8d%e6%96%b0%e6%95%b4%e7%90%86%e6%88%90%e4%b8%80%e4%bb%bd%e7%ad%86%e8%a8%98%e3%80%82&source=%e7%b4%80%e9%8c%84%20F2E%20%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92%e6%ad%b7%e7%a8%8b%20F2E%20Journey" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2fjavascript30_day06%2f&title=%e3%80%90JS30%e7%b3%bb%e5%88%97%e3%80%91Day%2006%ef%bc%9aType%20Ahead &summary=%e5%91%bc%e5%8f%ab%20API%20%e7%8d%b2%e5%8f%96%20JSON%20%e8%b3%87%e6%96%99%e9%9b%86%ef%bc%8c%e5%bb%ba%e7%ab%8b%e6%90%9c%e5%b0%8b%e5%ad%97%e4%b8%b2%e7%9a%84%e5%8a%9f%e8%83%bd%ef%bc%8c%e9%81%8e%e6%bf%be%e5%87%ba%e7%ac%a6%e5%90%88%e6%90%9c%e5%b0%8b%e5%ad%97%e4%b8%b2%e7%9a%84%e5%9f%8e%e5%b8%82%e5%90%8d%e6%88%96%e5%b7%9e%e5%90%8d%ef%bc%8c%e5%9c%a8%e7%95%ab%e9%9d%a2%e4%b8%8a%e5%8d%b0%e5%87%ba%e6%90%9c%e5%b0%8b%e7%b5%90%e6%9e%9c%e4%bb%a5%e5%8f%8a%e8%a9%b2%e5%9f%8e%e5%b8%82%e7%9a%84%e4%ba%ba%e5%8f%a3%e6%95%b8%ef%bc%8c%e4%b8%a6%e5%9c%a8%e5%9f%8e%e5%b8%82%e5%90%8d%e6%88%96%e5%b7%9e%e5%90%8d%e4%b8%ad%e7%94%a8%e9%bb%83%e8%89%b2%e6%a8%99%e5%87%ba%e6%90%9c%e5%b0%8b%e5%ad%97%e4%b8%b2%e3%80%82&source=%e7%b4%80%e9%8c%84%20F2E%20%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92%e6%ad%b7%e7%a8%8b%20F2E%20Journey" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
           <svg data-name="linkedin" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
         </a>
       
@@ -2101,10 +2287,6 @@ if (!doNotTrack) {
     <ul class="related-ul">
         
         <li>
-          <a href="/posts/2021/1013_byvalue_reference_sharing/" class="related__link">Javascript 的參數傳遞：by reference（傳址/傳參考）、by value（傳值）和 by sharing（傳共享）</a>
-        </li>
-        
-        <li>
           <a href="/posts/2021/javascript30_day05/" class="related__link">【JS30系列】Day 05：Flex Panels Gallery</a>
         </li>
         
@@ -2120,6 +2302,10 @@ if (!doNotTrack) {
           <a href="/posts/2021/javascript30_day02/" class="related__link">【JS30系列】Day 02：CSS &#43; JS Clock</a>
         </li>
         
+        <li>
+          <a href="/posts/2021/javascript30_day01/" class="related__link">【JS30系列】Day 01：JavaScript Drum Kit</a>
+        </li>
+        
     </ul>
     
   </section>
@@ -2127,21 +2313,14 @@ if (!doNotTrack) {
 <nav class="pagination-single">
   
     
-      <a href="https://sylvia-h.github.io/posts/2021/javascript30_day05/" class="pagination-single__left">
+      <a href="https://sylvia-h.github.io/posts/2021/1106_indexof_lastindexof/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">【JS30系列】Day 05：Flex Panels Gallery</div>      
+        <div class="pagination-single__left-title">【釋疑筆記】indexOf() 和 lastIndexOf() 的差別</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://sylvia-h.github.io/posts/2021/javascript30_day06/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">【JS30系列】Day 06：Type Ahead</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
