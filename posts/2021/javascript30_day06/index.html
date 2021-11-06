@@ -1335,9 +1335,9 @@
 
 
     
-<meta name="description" content="呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。" />
+<meta name="description" content="自動補全（Auto-Complete）聯想查詢。呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。" />
 
-<meta name="keywords" content="JS30,搜尋字串,XMLHttpRequest,fetch,RegExp,filter,match,replace,join,toLocaleString,json,api,事件監聽,Javascript,Wes Bos,Sylvia-H">
+<meta name="keywords" content="JS30,搜尋字串,自動補全,Auto-Complete,XMLHttpRequest,fetch,RegExp,filter,match,replace,join,toLocaleString,json,api,事件監聽,Javascript,Wes Bos,Sylvia-H">
 
 
 <meta name="keywords" content="JS30,Javascript">
@@ -1353,7 +1353,7 @@
 <meta property="og:title" content="【JS30系列】Day 06：Type Ahead">
 <meta property="og:url" content="https://sylvia-h.github.io/posts/2021/javascript30_day06/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。">
+<meta property="og:description" content="自動補全（Auto-Complete）聯想查詢。呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。">
 
   
     <meta property="og:image" content="https://sylvia-h.github.io/images/posts/js30/js30.png">
@@ -1361,7 +1361,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="Sylvia&#39;s Babel">
     <meta property="twitter:title" content="【JS30系列】Day 06：Type Ahead">
-    <meta property="twitter:description" content="呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。">
+    <meta property="twitter:description" content="自動補全（Auto-Complete）聯想查詢。呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。">
   
 
 <meta name="generator" content="Hugo 0.86.0" />
@@ -1391,7 +1391,7 @@
     "datePublished": "2021-11-06T22:48:00+08:00",
     "dateModified": "2021-11-06T22:48:00+08:00",
     "url" : "https://sylvia-h.github.io/posts/2021/javascript30_day06/",
-    "description": "呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。",
+    "description": "自動補全（Auto-Complete）聯想查詢。呼叫 API 獲取 JSON 資料集，建立搜尋字串的功能，過濾出符合搜尋字串的城市名或州名，在畫面上印出搜尋結果以及該城市的人口數，並在城市名或州名中用黃色標出搜尋字串。",
     "keywords": ["JS30","Javascript"],
     "image" : "https://sylvia-h.github.io/images/posts/js30/js30.png",
     "mainEntityOfPage": {
@@ -2140,7 +2140,7 @@ if (!doNotTrack) {
       
     
       
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2fjavascript30_day06%2f&title=%e3%80%90JS30%e7%b3%bb%e5%88%97%e3%80%91Day%2006%ef%bc%9aType%20Ahead &summary=%e5%91%bc%e5%8f%ab%20API%20%e7%8d%b2%e5%8f%96%20JSON%20%e8%b3%87%e6%96%99%e9%9b%86%ef%bc%8c%e5%bb%ba%e7%ab%8b%e6%90%9c%e5%b0%8b%e5%ad%97%e4%b8%b2%e7%9a%84%e5%8a%9f%e8%83%bd%ef%bc%8c%e9%81%8e%e6%bf%be%e5%87%ba%e7%ac%a6%e5%90%88%e6%90%9c%e5%b0%8b%e5%ad%97%e4%b8%b2%e7%9a%84%e5%9f%8e%e5%b8%82%e5%90%8d%e6%88%96%e5%b7%9e%e5%90%8d%ef%bc%8c%e5%9c%a8%e7%95%ab%e9%9d%a2%e4%b8%8a%e5%8d%b0%e5%87%ba%e6%90%9c%e5%b0%8b%e7%b5%90%e6%9e%9c%e4%bb%a5%e5%8f%8a%e8%a9%b2%e5%9f%8e%e5%b8%82%e7%9a%84%e4%ba%ba%e5%8f%a3%e6%95%b8%ef%bc%8c%e4%b8%a6%e5%9c%a8%e5%9f%8e%e5%b8%82%e5%90%8d%e6%88%96%e5%b7%9e%e5%90%8d%e4%b8%ad%e7%94%a8%e9%bb%83%e8%89%b2%e6%a8%99%e5%87%ba%e6%90%9c%e5%b0%8b%e5%ad%97%e4%b8%b2%e3%80%82&source=%e7%b4%80%e9%8c%84%20F2E%20%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92%e6%ad%b7%e7%a8%8b%20F2E%20Journey" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsylvia-h.github.io%2fposts%2f2021%2fjavascript30_day06%2f&title=%e3%80%90JS30%e7%b3%bb%e5%88%97%e3%80%91Day%2006%ef%bc%9aType%20Ahead &summary=%e8%87%aa%e5%8b%95%e8%a3%9c%e5%85%a8%ef%bc%88Auto-Complete%ef%bc%89%e8%81%af%e6%83%b3%e6%9f%a5%e8%a9%a2%e3%80%82%e5%91%bc%e5%8f%ab%20API%20%e7%8d%b2%e5%8f%96%20JSON%20%e8%b3%87%e6%96%99%e9%9b%86%ef%bc%8c%e5%bb%ba%e7%ab%8b%e6%90%9c%e5%b0%8b%e5%ad%97%e4%b8%b2%e7%9a%84%e5%8a%9f%e8%83%bd%ef%bc%8c%e9%81%8e%e6%bf%be%e5%87%ba%e7%ac%a6%e5%90%88%e6%90%9c%e5%b0%8b%e5%ad%97%e4%b8%b2%e7%9a%84%e5%9f%8e%e5%b8%82%e5%90%8d%e6%88%96%e5%b7%9e%e5%90%8d%ef%bc%8c%e5%9c%a8%e7%95%ab%e9%9d%a2%e4%b8%8a%e5%8d%b0%e5%87%ba%e6%90%9c%e5%b0%8b%e7%b5%90%e6%9e%9c%e4%bb%a5%e5%8f%8a%e8%a9%b2%e5%9f%8e%e5%b8%82%e7%9a%84%e4%ba%ba%e5%8f%a3%e6%95%b8%ef%bc%8c%e4%b8%a6%e5%9c%a8%e5%9f%8e%e5%b8%82%e5%90%8d%e6%88%96%e5%b7%9e%e5%90%8d%e4%b8%ad%e7%94%a8%e9%bb%83%e8%89%b2%e6%a8%99%e5%87%ba%e6%90%9c%e5%b0%8b%e5%ad%97%e4%b8%b2%e3%80%82&source=%e7%b4%80%e9%8c%84%20F2E%20%e5%89%8d%e7%ab%af%e5%ad%b8%e7%bf%92%e6%ad%b7%e7%a8%8b%20F2E%20Journey" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn Share Button" class="donation__item" data-type="share">
           <svg data-name="linkedin" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
         </a>
       
