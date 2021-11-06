@@ -30,7 +30,9 @@
         <description>indexOf() 和 lastIndexOf() 的差別在哪裡？其中參數所代表的意義為何？
 本來以為查了 MDN 就能明白，結果越看越不懂，動手用 console.log 試了幾遍才終於理解。於是把自己的理解重新整理成下面的筆記。
 indexOf 語法與參數涵義 arr.indexOf(searchElement[, fromIndex]) indexOf(尋找某元素, 從哪裡開始找到最後) = 第一個找到的索引值
-lastIndexOf 語法與參數涵義 arr.lastIndexOf(searchElement, fromIndex) lastIndexOf(尋找某元素, 從 0 開始找到哪裡) = 最後一個找到的索引值
+第二個參數選填，預設值為 0。
+lastIndexOf 語法與參數涵義 arr.lastIndexOf(searchElement[, fromIndex]) lastIndexOf(尋找某元素, 從 0 開始找到哪裡) = 最後一個找到的索引值
+第二個參數選填，預設值為陣列長度減一（arr.length - 1）。
 範例 1 2 3 4 5 6 7  arr = [0,1,2,1,0,2,1] arr.indexOf(1,4);	// 6 arr.indexOf(1,2);	// 3  arr.lastIndexOf(1,4);	// 3 arr.lastIndexOf(1,2);	// 1   結論 lastIndexOf (a, b) 會從 0 一直找到陣列的 b位置，回傳最後一個被找到的索引值。找不到的話，回傳 -1。
 indexOf (a, b) 會從陣列b位置開始找到陣列最後，回傳第一個被找到的索引值。找不到的話，回傳 -1。
  延伸閱讀：
