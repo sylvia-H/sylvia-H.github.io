@@ -3,10 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sylvia-h.github.io/categories/</loc>
-    <lastmod>2021-10-29T18:16:00+08:00</lastmod>
+    <lastmod>2021-11-06T19:35:00+08:00</lastmod>
   </url><url>
     <loc>https://sylvia-h.github.io/tags/javascript/</loc>
-    <lastmod>2021-10-29T18:16:00+08:00</lastmod>
+    <lastmod>2021-11-06T19:35:00+08:00</lastmod>
+  </url><url>
+    <loc>https://sylvia-h.github.io/categories/js-%E9%87%8B%E7%96%91%E7%AD%86%E8%A8%98/</loc>
+    <lastmod>2021-11-06T19:35:00+08:00</lastmod>
+  </url><url>
+    <loc>https://sylvia-h.github.io/</loc>
+    <lastmod>2021-11-06T19:35:00+08:00</lastmod>
+  </url><url>
+    <loc>https://sylvia-h.github.io/tags/</loc>
+    <lastmod>2021-11-06T19:35:00+08:00</lastmod>
+  </url><url>
+    <loc>https://sylvia-h.github.io/posts/2021/1106_indexof_lastindexof/</loc>
+    <lastmod>2021-11-06T19:35:00+08:00</lastmod>
   </url><url>
     <loc>https://sylvia-h.github.io/tags/js30/</loc>
     <lastmod>2021-10-29T18:16:00+08:00</lastmod>
@@ -18,12 +30,6 @@
     <lastmod>2021-10-29T18:16:00+08:00</lastmod>
   </url><url>
     <loc>https://sylvia-h.github.io/series/</loc>
-    <lastmod>2021-10-29T18:16:00+08:00</lastmod>
-  </url><url>
-    <loc>https://sylvia-h.github.io/</loc>
-    <lastmod>2021-10-29T18:16:00+08:00</lastmod>
-  </url><url>
-    <loc>https://sylvia-h.github.io/tags/</loc>
     <lastmod>2021-10-29T18:16:00+08:00</lastmod>
   </url><url>
     <loc>https://sylvia-h.github.io/posts/2021/javascript30_day05/</loc>
@@ -50,10 +56,10 @@
     <loc>https://sylvia-h.github.io/about/</loc>
     <lastmod>2021-10-14T15:25:46+08:00</lastmod>
   </url><url>
-    <loc>https://sylvia-h.github.io/categories/javascript-%E5%9F%BA%E7%A4%8E%E8%A7%80%E5%BF%B5/</loc>
+    <loc>https://sylvia-h.github.io/posts/2021/1013_byvalue_reference_sharing/</loc>
     <lastmod>2021-10-13T15:48:11+08:00</lastmod>
   </url><url>
-    <loc>https://sylvia-h.github.io/posts/2021/1013_byvalue_reference_sharing/</loc>
+    <loc>https://sylvia-h.github.io/categories/js-%E5%9F%BA%E7%A4%8E%E8%A7%80%E5%BF%B5/</loc>
     <lastmod>2021-10-13T15:48:11+08:00</lastmod>
   </url><url>
     <loc>https://sylvia-h.github.io/posts/2021/0919_language-type/</loc>
