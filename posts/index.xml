@@ -21,6 +21,50 @@
 
       
       <item>
+        <title>【JS30系列】Day 07：Array Cardio Day 2</title>
+        <link>https://sylvia-h.github.io/posts/2021/javascript30_day07/</link>
+        <pubDate>Sun, 07 Nov 2021 13:29:12 +0800</pubDate>
+        <author>sylvie11gaia@gmail.com (Sylvia-H)</author>
+        <atom:modified>Sun, 07 Nov 2021 13:29:12 +0800</atom:modified>
+        <guid>https://sylvia-h.github.io/posts/2021/javascript30_day07/</guid>
+        <description>Wes Bos 的原始專案：JS30 Day07  Wes Bos 教學影片 Day 07 Day 07 專案完成前 Day 07 專案完成後  專案目標： 熟悉陣列操作方法：some()、every()、find()、findIndex()、splice()。
+此範例瀏覽器不會渲染出畫面，純粹用陣列操作方法來篩選出資料。
+實作成果
+資料集 題目給了兩筆資料集，以下共有 5 道題目要從以下兩個資料集中篩選出目標物件資料。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  const people = [ { name: &amp;#39;Wes&amp;#39;, year: 1988 }, { name: &amp;#39;Kait&amp;#39;, year: 1986 }, { name: &amp;#39;Irv&amp;#39;, year: 1970 }, { name: &amp;#39;Lux&amp;#39;, year: 2015 } ]; const comments = [ { text: &amp;#39;Love this!&amp;#39;, id: 523423 }, { text: &amp;#39;Super good&amp;#39;, id: 823423 }, { text: &amp;#39;You are the best&amp;#39;, id: 2039842 }, { text: &amp;#39;Ramen is my fav food ever&amp;#39;, id: 123523 }, { text: &amp;#39;Nice Nice Nice!</description>
+        
+        <dc:creator>Sylvia-H</dc:creator>
+        <media:content url="https://sylvia-h.github.ioimages/posts/js30/js30.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>JS30</category>
+            
+          
+            
+              <category>Javascript</category>
+            
+          
+        
+        
+          
+            
+              <category>JS30 系列</category>
+            
+          
+        
+        
+          
+            
+              <category>JS30 系列學習筆記</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>【JS30系列】Day 06：Type Ahead</title>
         <link>https://sylvia-h.github.io/posts/2021/javascript30_day06/</link>
         <pubDate>Sat, 06 Nov 2021 22:48:00 +0800</pubDate>
